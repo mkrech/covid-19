@@ -6,10 +6,8 @@ import numpy as np
 
 def load_data(data = 'confirmed'):
 
-    # url=f'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-{data}.csv'
     url=f'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_{data}_global.csv'
 
-    
     # get csv
     csv = requests.get(url).text
     df = pd.read_csv(io.StringIO(csv), index_col=['Country/Region', 'Province/State', 'Lat', 'Long'])
@@ -31,7 +29,7 @@ def load_data(data = 'confirmed'):
     # index date
     df = df.set_index('date')
 
-    # index to datime
+    # index to datetime
     df.index = pd.to_datetime(df.index)
 
     #new names to cols
@@ -41,7 +39,7 @@ def load_data(data = 'confirmed'):
 
 # %%
 def agg_states(df):
-    ######################## states zusammenfassen ###############
+    ######################## combine states ###############
     # split state
     df_country_with_states = df.loc[~df.state.isna()]
     df_country_without_states = df.loc[df.state.isna()]
@@ -62,9 +60,10 @@ def agg_states(df):
     return df_result
 
 # %%
-data = 'confirmed'
-df = load_data(data)
-df = agg_states(df)
-df.columns = ['date', 'state', 'type', 'cases']
-df.to_csv('jhu.csv', index=False)
+if __name__ == "__main__":
+    data = 'confirmed'
+    df = load_data(data)
+    df = agg_states(df)
+    df.columns = ['date', 'state', 'type', 'cases']
+    df.to_csv('jhu.csv', index=False)
 # %%

@@ -1,3 +1,4 @@
+# %%
 # To add a new cell, type '# %%'
 # To add a new markdown cell, type '# %% [markdown]'
 # %%
@@ -525,7 +526,6 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %d'))
 results = {}
 
 # states_to_process = states.loc[~states.index.get_level_values('state').isin(FILTERED_REGIONS)]
-
 states_to_process = states.loc[states.index.get_level_values('state').isin(FILTERED_COUNTRIES)]
 
 for state_name, cases in states_to_process.groupby(level='state'):
@@ -588,6 +588,7 @@ overall.sort_index(inplace=True)
 
 # %%
 # As of 4/12
+"""
 no_lockdown = [
     'North Dakota',
     'South Dakota',
@@ -600,7 +601,7 @@ partial_lockdown = [
     'Wyoming',
     'Oklahoma'
 ]
-
+"""
 FULL_COLOR = [.7,.7,.7]
 NONE_COLOR = [179/255,35/255,14/255]
 PARTIAL_COLOR = [.5,.5,.5]
@@ -608,8 +609,7 @@ ERROR_BAR_COLOR = [.3,.3,.3]
 
 
 # %%
-#filtered = overall.index.get_level_values(0).isin(FILTERED_REGIONS)
-
+# filtered = overall.index.get_level_values(0).isin(FILTERED_REGIONS)
 # mr = overall.loc[filtered].groupby(level=0)[['ML', 'High', 'Low']]v.last()
 
 filtered = overall.index.get_level_values(0).isin(FILTERED_COUNTRIES)
@@ -632,11 +632,16 @@ def plot_standings(mr, figsize=None, title='Most Recent $R_t$ by Country'):
                   error_kw={'alpha':.5, 'lw':1},
                   yerr=err.values.T)
 
+    """
     for bar, state_name in zip(bars, mr.index):
         if state_name in no_lockdown:
             bar.set_color(NONE_COLOR)
         if state_name in partial_lockdown:
             bar.set_color(PARTIAL_COLOR)
+    """
+
+    for bar, state_name in zip(bars, mr.index):
+        bar.set_color(PARTIAL_COLOR)
 
     labels = mr.index.to_series().replace({'District of Columbia':'DC'})
     ax.set_xticklabels(labels, rotation=90, fontsize=11)
