@@ -33,12 +33,14 @@ from scipy.interpolate import interp1d
 
 from IPython.display import clear_output
 
+"""
 FILTERED_REGIONS = [
     'Virgin Islands',
     'American Samoa',
     'Northern Mariana Islands',
     'Guam',
     'Puerto Rico']
+"""
 
 FILTERED_COUNTRIES = [
     'Andorra',
