@@ -349,7 +349,7 @@ states = pd.read_csv(url,
 
 # %%
 # state_name = 'NY'
-state_name = 'Eswatini'
+state_name = 'Angola'
 
 def prepare_cases(cases):
     new_cases = cases.diff()
