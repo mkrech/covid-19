@@ -81,6 +81,12 @@ date,state,type,cases
 2020-04-10,Afghanistan,confirmed,521
 2020-04-11,Afghanistan,confirmed,555
 2020-04-12,Afghanistan,confirmed,607
+2020-04-13,Afghanistan,confirmed,665
+2020-04-14,Afghanistan,confirmed,714
+2020-04-15,Afghanistan,confirmed,784
+2020-04-16,Afghanistan,confirmed,840
+2020-04-17,Afghanistan,confirmed,906
+2020-04-18,Afghanistan,confirmed,933
 2020-01-22,Albania,confirmed,0
 2020-01-23,Albania,confirmed,0
 2020-01-24,Albania,confirmed,0
@@ -163,6 +169,12 @@ date,state,type,cases
 2020-04-10,Albania,confirmed,416
 2020-04-11,Albania,confirmed,433
 2020-04-12,Albania,confirmed,446
+2020-04-13,Albania,confirmed,467
+2020-04-14,Albania,confirmed,475
+2020-04-15,Albania,confirmed,494
+2020-04-16,Albania,confirmed,518
+2020-04-17,Albania,confirmed,539
+2020-04-18,Albania,confirmed,548
 2020-01-22,Algeria,confirmed,0
 2020-01-23,Algeria,confirmed,0
 2020-01-24,Algeria,confirmed,0
@@ -245,6 +257,12 @@ date,state,type,cases
 2020-04-10,Algeria,confirmed,1761
 2020-04-11,Algeria,confirmed,1825
 2020-04-12,Algeria,confirmed,1914
+2020-04-13,Algeria,confirmed,1983
+2020-04-14,Algeria,confirmed,2070
+2020-04-15,Algeria,confirmed,2160
+2020-04-16,Algeria,confirmed,2268
+2020-04-17,Algeria,confirmed,2418
+2020-04-18,Algeria,confirmed,2534
 2020-01-22,Andorra,confirmed,0
 2020-01-23,Andorra,confirmed,0
 2020-01-24,Andorra,confirmed,0
@@ -327,6 +345,12 @@ date,state,type,cases
 2020-04-10,Andorra,confirmed,601
 2020-04-11,Andorra,confirmed,601
 2020-04-12,Andorra,confirmed,638
+2020-04-13,Andorra,confirmed,646
+2020-04-14,Andorra,confirmed,659
+2020-04-15,Andorra,confirmed,673
+2020-04-16,Andorra,confirmed,673
+2020-04-17,Andorra,confirmed,696
+2020-04-18,Andorra,confirmed,704
 2020-01-22,Angola,confirmed,0
 2020-01-23,Angola,confirmed,0
 2020-01-24,Angola,confirmed,0
@@ -409,6 +433,12 @@ date,state,type,cases
 2020-04-10,Angola,confirmed,19
 2020-04-11,Angola,confirmed,19
 2020-04-12,Angola,confirmed,19
+2020-04-13,Angola,confirmed,19
+2020-04-14,Angola,confirmed,19
+2020-04-15,Angola,confirmed,19
+2020-04-16,Angola,confirmed,19
+2020-04-17,Angola,confirmed,19
+2020-04-18,Angola,confirmed,24
 2020-01-22,Antigua and Barbuda,confirmed,0
 2020-01-23,Antigua and Barbuda,confirmed,0
 2020-01-24,Antigua and Barbuda,confirmed,0
@@ -491,6 +521,12 @@ date,state,type,cases
 2020-04-10,Antigua and Barbuda,confirmed,19
 2020-04-11,Antigua and Barbuda,confirmed,21
 2020-04-12,Antigua and Barbuda,confirmed,21
+2020-04-13,Antigua and Barbuda,confirmed,23
+2020-04-14,Antigua and Barbuda,confirmed,23
+2020-04-15,Antigua and Barbuda,confirmed,23
+2020-04-16,Antigua and Barbuda,confirmed,23
+2020-04-17,Antigua and Barbuda,confirmed,23
+2020-04-18,Antigua and Barbuda,confirmed,23
 2020-01-22,Argentina,confirmed,0
 2020-01-23,Argentina,confirmed,0
 2020-01-24,Argentina,confirmed,0
@@ -573,6 +609,12 @@ date,state,type,cases
 2020-04-10,Argentina,confirmed,1975
 2020-04-11,Argentina,confirmed,1975
 2020-04-12,Argentina,confirmed,2142
+2020-04-13,Argentina,confirmed,2208
+2020-04-14,Argentina,confirmed,2277
+2020-04-15,Argentina,confirmed,2443
+2020-04-16,Argentina,confirmed,2571
+2020-04-17,Argentina,confirmed,2669
+2020-04-18,Argentina,confirmed,2758
 2020-01-22,Armenia,confirmed,0
 2020-01-23,Armenia,confirmed,0
 2020-01-24,Armenia,confirmed,0
@@ -655,6 +697,12 @@ date,state,type,cases
 2020-04-10,Armenia,confirmed,937
 2020-04-11,Armenia,confirmed,967
 2020-04-12,Armenia,confirmed,1013
+2020-04-13,Armenia,confirmed,1039
+2020-04-14,Armenia,confirmed,1067
+2020-04-15,Armenia,confirmed,1111
+2020-04-16,Armenia,confirmed,1159
+2020-04-17,Armenia,confirmed,1201
+2020-04-18,Armenia,confirmed,1248
 2020-01-22,Austria,confirmed,0
 2020-01-23,Austria,confirmed,0
 2020-01-24,Austria,confirmed,0
@@ -737,6 +785,12 @@ date,state,type,cases
 2020-04-10,Austria,confirmed,13555
 2020-04-11,Austria,confirmed,13806
 2020-04-12,Austria,confirmed,13945
+2020-04-13,Austria,confirmed,14041
+2020-04-14,Austria,confirmed,14226
+2020-04-15,Austria,confirmed,14336
+2020-04-16,Austria,confirmed,14476
+2020-04-17,Austria,confirmed,14595
+2020-04-18,Austria,confirmed,14671
 2020-01-22,Azerbaijan,confirmed,0
 2020-01-23,Azerbaijan,confirmed,0
 2020-01-24,Azerbaijan,confirmed,0
@@ -819,6 +873,12 @@ date,state,type,cases
 2020-04-10,Azerbaijan,confirmed,991
 2020-04-11,Azerbaijan,confirmed,1058
 2020-04-12,Azerbaijan,confirmed,1098
+2020-04-13,Azerbaijan,confirmed,1148
+2020-04-14,Azerbaijan,confirmed,1197
+2020-04-15,Azerbaijan,confirmed,1253
+2020-04-16,Azerbaijan,confirmed,1283
+2020-04-17,Azerbaijan,confirmed,1340
+2020-04-18,Azerbaijan,confirmed,1373
 2020-01-22,Bahamas,confirmed,0
 2020-01-23,Bahamas,confirmed,0
 2020-01-24,Bahamas,confirmed,0
@@ -901,6 +961,12 @@ date,state,type,cases
 2020-04-10,Bahamas,confirmed,42
 2020-04-11,Bahamas,confirmed,46
 2020-04-12,Bahamas,confirmed,46
+2020-04-13,Bahamas,confirmed,47
+2020-04-14,Bahamas,confirmed,49
+2020-04-15,Bahamas,confirmed,49
+2020-04-16,Bahamas,confirmed,53
+2020-04-17,Bahamas,confirmed,54
+2020-04-18,Bahamas,confirmed,55
 2020-01-22,Bahrain,confirmed,0
 2020-01-23,Bahrain,confirmed,0
 2020-01-24,Bahrain,confirmed,0
@@ -983,6 +1049,12 @@ date,state,type,cases
 2020-04-10,Bahrain,confirmed,925
 2020-04-11,Bahrain,confirmed,1040
 2020-04-12,Bahrain,confirmed,1136
+2020-04-13,Bahrain,confirmed,1361
+2020-04-14,Bahrain,confirmed,1528
+2020-04-15,Bahrain,confirmed,1671
+2020-04-16,Bahrain,confirmed,1700
+2020-04-17,Bahrain,confirmed,1740
+2020-04-18,Bahrain,confirmed,1773
 2020-01-22,Bangladesh,confirmed,0
 2020-01-23,Bangladesh,confirmed,0
 2020-01-24,Bangladesh,confirmed,0
@@ -1065,6 +1137,12 @@ date,state,type,cases
 2020-04-10,Bangladesh,confirmed,424
 2020-04-11,Bangladesh,confirmed,482
 2020-04-12,Bangladesh,confirmed,621
+2020-04-13,Bangladesh,confirmed,803
+2020-04-14,Bangladesh,confirmed,1012
+2020-04-15,Bangladesh,confirmed,1231
+2020-04-16,Bangladesh,confirmed,1572
+2020-04-17,Bangladesh,confirmed,1838
+2020-04-18,Bangladesh,confirmed,2144
 2020-01-22,Barbados,confirmed,0
 2020-01-23,Barbados,confirmed,0
 2020-01-24,Barbados,confirmed,0
@@ -1147,6 +1225,12 @@ date,state,type,cases
 2020-04-10,Barbados,confirmed,67
 2020-04-11,Barbados,confirmed,68
 2020-04-12,Barbados,confirmed,71
+2020-04-13,Barbados,confirmed,72
+2020-04-14,Barbados,confirmed,72
+2020-04-15,Barbados,confirmed,73
+2020-04-16,Barbados,confirmed,75
+2020-04-17,Barbados,confirmed,75
+2020-04-18,Barbados,confirmed,75
 2020-01-22,Belarus,confirmed,0
 2020-01-23,Belarus,confirmed,0
 2020-01-24,Belarus,confirmed,0
@@ -1229,6 +1313,12 @@ date,state,type,cases
 2020-04-10,Belarus,confirmed,1981
 2020-04-11,Belarus,confirmed,2226
 2020-04-12,Belarus,confirmed,2578
+2020-04-13,Belarus,confirmed,2919
+2020-04-14,Belarus,confirmed,3281
+2020-04-15,Belarus,confirmed,3728
+2020-04-16,Belarus,confirmed,4204
+2020-04-17,Belarus,confirmed,4779
+2020-04-18,Belarus,confirmed,4779
 2020-01-22,Belgium,confirmed,0
 2020-01-23,Belgium,confirmed,0
 2020-01-24,Belgium,confirmed,0
@@ -1311,6 +1401,12 @@ date,state,type,cases
 2020-04-10,Belgium,confirmed,26667
 2020-04-11,Belgium,confirmed,28018
 2020-04-12,Belgium,confirmed,29647
+2020-04-13,Belgium,confirmed,30589
+2020-04-14,Belgium,confirmed,31119
+2020-04-15,Belgium,confirmed,33573
+2020-04-16,Belgium,confirmed,34809
+2020-04-17,Belgium,confirmed,36138
+2020-04-18,Belgium,confirmed,37183
 2020-01-22,Benin,confirmed,0
 2020-01-23,Benin,confirmed,0
 2020-01-24,Benin,confirmed,0
@@ -1393,6 +1489,12 @@ date,state,type,cases
 2020-04-10,Benin,confirmed,35
 2020-04-11,Benin,confirmed,35
 2020-04-12,Benin,confirmed,35
+2020-04-13,Benin,confirmed,35
+2020-04-14,Benin,confirmed,35
+2020-04-15,Benin,confirmed,35
+2020-04-16,Benin,confirmed,35
+2020-04-17,Benin,confirmed,35
+2020-04-18,Benin,confirmed,35
 2020-01-22,Bhutan,confirmed,0
 2020-01-23,Bhutan,confirmed,0
 2020-01-24,Bhutan,confirmed,0
@@ -1475,6 +1577,12 @@ date,state,type,cases
 2020-04-10,Bhutan,confirmed,5
 2020-04-11,Bhutan,confirmed,5
 2020-04-12,Bhutan,confirmed,5
+2020-04-13,Bhutan,confirmed,5
+2020-04-14,Bhutan,confirmed,5
+2020-04-15,Bhutan,confirmed,5
+2020-04-16,Bhutan,confirmed,5
+2020-04-17,Bhutan,confirmed,5
+2020-04-18,Bhutan,confirmed,5
 2020-01-22,Bolivia,confirmed,0
 2020-01-23,Bolivia,confirmed,0
 2020-01-24,Bolivia,confirmed,0
@@ -1557,6 +1665,12 @@ date,state,type,cases
 2020-04-10,Bolivia,confirmed,268
 2020-04-11,Bolivia,confirmed,275
 2020-04-12,Bolivia,confirmed,300
+2020-04-13,Bolivia,confirmed,330
+2020-04-14,Bolivia,confirmed,354
+2020-04-15,Bolivia,confirmed,397
+2020-04-16,Bolivia,confirmed,441
+2020-04-17,Bolivia,confirmed,465
+2020-04-18,Bolivia,confirmed,493
 2020-01-22,Bosnia and Herzegovina,confirmed,0
 2020-01-23,Bosnia and Herzegovina,confirmed,0
 2020-01-24,Bosnia and Herzegovina,confirmed,0
@@ -1639,6 +1753,12 @@ date,state,type,cases
 2020-04-10,Bosnia and Herzegovina,confirmed,901
 2020-04-11,Bosnia and Herzegovina,confirmed,946
 2020-04-12,Bosnia and Herzegovina,confirmed,1009
+2020-04-13,Bosnia and Herzegovina,confirmed,1037
+2020-04-14,Bosnia and Herzegovina,confirmed,1083
+2020-04-15,Bosnia and Herzegovina,confirmed,1110
+2020-04-16,Bosnia and Herzegovina,confirmed,1167
+2020-04-17,Bosnia and Herzegovina,confirmed,1214
+2020-04-18,Bosnia and Herzegovina,confirmed,1268
 2020-01-22,Brazil,confirmed,0
 2020-01-23,Brazil,confirmed,0
 2020-01-24,Brazil,confirmed,0
@@ -1721,6 +1841,12 @@ date,state,type,cases
 2020-04-10,Brazil,confirmed,19638
 2020-04-11,Brazil,confirmed,20727
 2020-04-12,Brazil,confirmed,22192
+2020-04-13,Brazil,confirmed,23430
+2020-04-14,Brazil,confirmed,25262
+2020-04-15,Brazil,confirmed,28320
+2020-04-16,Brazil,confirmed,30425
+2020-04-17,Brazil,confirmed,33682
+2020-04-18,Brazil,confirmed,36658
 2020-01-22,Brunei,confirmed,0
 2020-01-23,Brunei,confirmed,0
 2020-01-24,Brunei,confirmed,0
@@ -1803,6 +1929,12 @@ date,state,type,cases
 2020-04-10,Brunei,confirmed,136
 2020-04-11,Brunei,confirmed,136
 2020-04-12,Brunei,confirmed,136
+2020-04-13,Brunei,confirmed,136
+2020-04-14,Brunei,confirmed,136
+2020-04-15,Brunei,confirmed,136
+2020-04-16,Brunei,confirmed,136
+2020-04-17,Brunei,confirmed,136
+2020-04-18,Brunei,confirmed,137
 2020-01-22,Bulgaria,confirmed,0
 2020-01-23,Bulgaria,confirmed,0
 2020-01-24,Bulgaria,confirmed,0
@@ -1885,6 +2017,12 @@ date,state,type,cases
 2020-04-10,Bulgaria,confirmed,635
 2020-04-11,Bulgaria,confirmed,661
 2020-04-12,Bulgaria,confirmed,675
+2020-04-13,Bulgaria,confirmed,685
+2020-04-14,Bulgaria,confirmed,713
+2020-04-15,Bulgaria,confirmed,747
+2020-04-16,Bulgaria,confirmed,800
+2020-04-17,Bulgaria,confirmed,846
+2020-04-18,Bulgaria,confirmed,878
 2020-01-22,Burkina Faso,confirmed,0
 2020-01-23,Burkina Faso,confirmed,0
 2020-01-24,Burkina Faso,confirmed,0
@@ -1967,6 +2105,12 @@ date,state,type,cases
 2020-04-10,Burkina Faso,confirmed,443
 2020-04-11,Burkina Faso,confirmed,484
 2020-04-12,Burkina Faso,confirmed,497
+2020-04-13,Burkina Faso,confirmed,497
+2020-04-14,Burkina Faso,confirmed,528
+2020-04-15,Burkina Faso,confirmed,542
+2020-04-16,Burkina Faso,confirmed,546
+2020-04-17,Burkina Faso,confirmed,557
+2020-04-18,Burkina Faso,confirmed,565
 2020-01-22,Cabo Verde,confirmed,0
 2020-01-23,Cabo Verde,confirmed,0
 2020-01-24,Cabo Verde,confirmed,0
@@ -2049,6 +2193,12 @@ date,state,type,cases
 2020-04-10,Cabo Verde,confirmed,7
 2020-04-11,Cabo Verde,confirmed,8
 2020-04-12,Cabo Verde,confirmed,8
+2020-04-13,Cabo Verde,confirmed,10
+2020-04-14,Cabo Verde,confirmed,11
+2020-04-15,Cabo Verde,confirmed,56
+2020-04-16,Cabo Verde,confirmed,56
+2020-04-17,Cabo Verde,confirmed,56
+2020-04-18,Cabo Verde,confirmed,58
 2020-01-22,Cambodia,confirmed,0
 2020-01-23,Cambodia,confirmed,0
 2020-01-24,Cambodia,confirmed,0
@@ -2131,6 +2281,12 @@ date,state,type,cases
 2020-04-10,Cambodia,confirmed,119
 2020-04-11,Cambodia,confirmed,120
 2020-04-12,Cambodia,confirmed,122
+2020-04-13,Cambodia,confirmed,122
+2020-04-14,Cambodia,confirmed,122
+2020-04-15,Cambodia,confirmed,122
+2020-04-16,Cambodia,confirmed,122
+2020-04-17,Cambodia,confirmed,122
+2020-04-18,Cambodia,confirmed,122
 2020-01-22,Cameroon,confirmed,0
 2020-01-23,Cameroon,confirmed,0
 2020-01-24,Cameroon,confirmed,0
@@ -2213,6 +2369,12 @@ date,state,type,cases
 2020-04-10,Cameroon,confirmed,820
 2020-04-11,Cameroon,confirmed,820
 2020-04-12,Cameroon,confirmed,820
+2020-04-13,Cameroon,confirmed,820
+2020-04-14,Cameroon,confirmed,848
+2020-04-15,Cameroon,confirmed,848
+2020-04-16,Cameroon,confirmed,996
+2020-04-17,Cameroon,confirmed,996
+2020-04-18,Cameroon,confirmed,1017
 2020-01-22,Central African Republic,confirmed,0
 2020-01-23,Central African Republic,confirmed,0
 2020-01-24,Central African Republic,confirmed,0
@@ -2295,6 +2457,12 @@ date,state,type,cases
 2020-04-10,Central African Republic,confirmed,8
 2020-04-11,Central African Republic,confirmed,8
 2020-04-12,Central African Republic,confirmed,8
+2020-04-13,Central African Republic,confirmed,11
+2020-04-14,Central African Republic,confirmed,11
+2020-04-15,Central African Republic,confirmed,12
+2020-04-16,Central African Republic,confirmed,12
+2020-04-17,Central African Republic,confirmed,12
+2020-04-18,Central African Republic,confirmed,12
 2020-01-22,Chad,confirmed,0
 2020-01-23,Chad,confirmed,0
 2020-01-24,Chad,confirmed,0
@@ -2377,6 +2545,12 @@ date,state,type,cases
 2020-04-10,Chad,confirmed,11
 2020-04-11,Chad,confirmed,11
 2020-04-12,Chad,confirmed,18
+2020-04-13,Chad,confirmed,23
+2020-04-14,Chad,confirmed,23
+2020-04-15,Chad,confirmed,23
+2020-04-16,Chad,confirmed,27
+2020-04-17,Chad,confirmed,27
+2020-04-18,Chad,confirmed,33
 2020-01-22,Chile,confirmed,0
 2020-01-23,Chile,confirmed,0
 2020-01-24,Chile,confirmed,0
@@ -2459,6 +2633,12 @@ date,state,type,cases
 2020-04-10,Chile,confirmed,6501
 2020-04-11,Chile,confirmed,6927
 2020-04-12,Chile,confirmed,7213
+2020-04-13,Chile,confirmed,7525
+2020-04-14,Chile,confirmed,7917
+2020-04-15,Chile,confirmed,8273
+2020-04-16,Chile,confirmed,8807
+2020-04-17,Chile,confirmed,9252
+2020-04-18,Chile,confirmed,9730
 2020-01-22,Colombia,confirmed,0
 2020-01-23,Colombia,confirmed,0
 2020-01-24,Colombia,confirmed,0
@@ -2541,6 +2721,12 @@ date,state,type,cases
 2020-04-10,Colombia,confirmed,2473
 2020-04-11,Colombia,confirmed,2709
 2020-04-12,Colombia,confirmed,2776
+2020-04-13,Colombia,confirmed,2852
+2020-04-14,Colombia,confirmed,2979
+2020-04-15,Colombia,confirmed,3105
+2020-04-16,Colombia,confirmed,3233
+2020-04-17,Colombia,confirmed,3439
+2020-04-18,Colombia,confirmed,3439
 2020-01-22,Congo (Brazzaville),confirmed,0
 2020-01-23,Congo (Brazzaville),confirmed,0
 2020-01-24,Congo (Brazzaville),confirmed,0
@@ -2623,6 +2809,12 @@ date,state,type,cases
 2020-04-10,Congo (Brazzaville),confirmed,60
 2020-04-11,Congo (Brazzaville),confirmed,60
 2020-04-12,Congo (Brazzaville),confirmed,60
+2020-04-13,Congo (Brazzaville),confirmed,60
+2020-04-14,Congo (Brazzaville),confirmed,60
+2020-04-15,Congo (Brazzaville),confirmed,117
+2020-04-16,Congo (Brazzaville),confirmed,117
+2020-04-17,Congo (Brazzaville),confirmed,143
+2020-04-18,Congo (Brazzaville),confirmed,143
 2020-01-22,Congo (Kinshasa),confirmed,0
 2020-01-23,Congo (Kinshasa),confirmed,0
 2020-01-24,Congo (Kinshasa),confirmed,0
@@ -2705,6 +2897,12 @@ date,state,type,cases
 2020-04-10,Congo (Kinshasa),confirmed,215
 2020-04-11,Congo (Kinshasa),confirmed,223
 2020-04-12,Congo (Kinshasa),confirmed,234
+2020-04-13,Congo (Kinshasa),confirmed,235
+2020-04-14,Congo (Kinshasa),confirmed,241
+2020-04-15,Congo (Kinshasa),confirmed,254
+2020-04-16,Congo (Kinshasa),confirmed,267
+2020-04-17,Congo (Kinshasa),confirmed,287
+2020-04-18,Congo (Kinshasa),confirmed,307
 2020-01-22,Costa Rica,confirmed,0
 2020-01-23,Costa Rica,confirmed,0
 2020-01-24,Costa Rica,confirmed,0
@@ -2787,6 +2985,12 @@ date,state,type,cases
 2020-04-10,Costa Rica,confirmed,558
 2020-04-11,Costa Rica,confirmed,577
 2020-04-12,Costa Rica,confirmed,595
+2020-04-13,Costa Rica,confirmed,612
+2020-04-14,Costa Rica,confirmed,618
+2020-04-15,Costa Rica,confirmed,626
+2020-04-16,Costa Rica,confirmed,642
+2020-04-17,Costa Rica,confirmed,649
+2020-04-18,Costa Rica,confirmed,655
 2020-01-22,Cote d'Ivoire,confirmed,0
 2020-01-23,Cote d'Ivoire,confirmed,0
 2020-01-24,Cote d'Ivoire,confirmed,0
@@ -2869,6 +3073,12 @@ date,state,type,cases
 2020-04-10,Cote d'Ivoire,confirmed,444
 2020-04-11,Cote d'Ivoire,confirmed,533
 2020-04-12,Cote d'Ivoire,confirmed,574
+2020-04-13,Cote d'Ivoire,confirmed,626
+2020-04-14,Cote d'Ivoire,confirmed,638
+2020-04-15,Cote d'Ivoire,confirmed,638
+2020-04-16,Cote d'Ivoire,confirmed,654
+2020-04-17,Cote d'Ivoire,confirmed,688
+2020-04-18,Cote d'Ivoire,confirmed,801
 2020-01-22,Croatia,confirmed,0
 2020-01-23,Croatia,confirmed,0
 2020-01-24,Croatia,confirmed,0
@@ -2951,6 +3161,12 @@ date,state,type,cases
 2020-04-10,Croatia,confirmed,1495
 2020-04-11,Croatia,confirmed,1534
 2020-04-12,Croatia,confirmed,1600
+2020-04-13,Croatia,confirmed,1650
+2020-04-14,Croatia,confirmed,1704
+2020-04-15,Croatia,confirmed,1741
+2020-04-16,Croatia,confirmed,1791
+2020-04-17,Croatia,confirmed,1814
+2020-04-18,Croatia,confirmed,1832
 2020-01-22,Diamond Princess,confirmed,0
 2020-01-23,Diamond Princess,confirmed,0
 2020-01-24,Diamond Princess,confirmed,0
@@ -3033,6 +3249,12 @@ date,state,type,cases
 2020-04-10,Diamond Princess,confirmed,712
 2020-04-11,Diamond Princess,confirmed,712
 2020-04-12,Diamond Princess,confirmed,712
+2020-04-13,Diamond Princess,confirmed,712
+2020-04-14,Diamond Princess,confirmed,712
+2020-04-15,Diamond Princess,confirmed,712
+2020-04-16,Diamond Princess,confirmed,712
+2020-04-17,Diamond Princess,confirmed,712
+2020-04-18,Diamond Princess,confirmed,712
 2020-01-22,Cuba,confirmed,0
 2020-01-23,Cuba,confirmed,0
 2020-01-24,Cuba,confirmed,0
@@ -3115,6 +3337,12 @@ date,state,type,cases
 2020-04-10,Cuba,confirmed,564
 2020-04-11,Cuba,confirmed,620
 2020-04-12,Cuba,confirmed,669
+2020-04-13,Cuba,confirmed,726
+2020-04-14,Cuba,confirmed,766
+2020-04-15,Cuba,confirmed,814
+2020-04-16,Cuba,confirmed,862
+2020-04-17,Cuba,confirmed,923
+2020-04-18,Cuba,confirmed,986
 2020-01-22,Cyprus,confirmed,0
 2020-01-23,Cyprus,confirmed,0
 2020-01-24,Cyprus,confirmed,0
@@ -3197,6 +3425,12 @@ date,state,type,cases
 2020-04-10,Cyprus,confirmed,595
 2020-04-11,Cyprus,confirmed,616
 2020-04-12,Cyprus,confirmed,633
+2020-04-13,Cyprus,confirmed,662
+2020-04-14,Cyprus,confirmed,695
+2020-04-15,Cyprus,confirmed,715
+2020-04-16,Cyprus,confirmed,735
+2020-04-17,Cyprus,confirmed,750
+2020-04-18,Cyprus,confirmed,761
 2020-01-22,Czechia,confirmed,0
 2020-01-23,Czechia,confirmed,0
 2020-01-24,Czechia,confirmed,0
@@ -3279,6 +3513,12 @@ date,state,type,cases
 2020-04-10,Czechia,confirmed,5732
 2020-04-11,Czechia,confirmed,5831
 2020-04-12,Czechia,confirmed,5991
+2020-04-13,Czechia,confirmed,6059
+2020-04-14,Czechia,confirmed,6111
+2020-04-15,Czechia,confirmed,6216
+2020-04-16,Czechia,confirmed,6433
+2020-04-17,Czechia,confirmed,6549
+2020-04-18,Czechia,confirmed,6606
 2020-01-22,Denmark,confirmed,0
 2020-01-23,Denmark,confirmed,0
 2020-01-24,Denmark,confirmed,0
@@ -3361,6 +3601,12 @@ date,state,type,cases
 2020-04-10,Denmark,confirmed,5819
 2020-04-11,Denmark,confirmed,5996
 2020-04-12,Denmark,confirmed,6174
+2020-04-13,Denmark,confirmed,6318
+2020-04-14,Denmark,confirmed,6511
+2020-04-15,Denmark,confirmed,6681
+2020-04-16,Denmark,confirmed,6879
+2020-04-17,Denmark,confirmed,7073
+2020-04-18,Denmark,confirmed,7242
 2020-01-22,Djibouti,confirmed,0
 2020-01-23,Djibouti,confirmed,0
 2020-01-24,Djibouti,confirmed,0
@@ -3443,6 +3689,12 @@ date,state,type,cases
 2020-04-10,Djibouti,confirmed,150
 2020-04-11,Djibouti,confirmed,187
 2020-04-12,Djibouti,confirmed,214
+2020-04-13,Djibouti,confirmed,298
+2020-04-14,Djibouti,confirmed,363
+2020-04-15,Djibouti,confirmed,435
+2020-04-16,Djibouti,confirmed,591
+2020-04-17,Djibouti,confirmed,732
+2020-04-18,Djibouti,confirmed,732
 2020-01-22,Dominican Republic,confirmed,0
 2020-01-23,Dominican Republic,confirmed,0
 2020-01-24,Dominican Republic,confirmed,0
@@ -3525,6 +3777,12 @@ date,state,type,cases
 2020-04-10,Dominican Republic,confirmed,2620
 2020-04-11,Dominican Republic,confirmed,2759
 2020-04-12,Dominican Republic,confirmed,2967
+2020-04-13,Dominican Republic,confirmed,3167
+2020-04-14,Dominican Republic,confirmed,3286
+2020-04-15,Dominican Republic,confirmed,3614
+2020-04-16,Dominican Republic,confirmed,3755
+2020-04-17,Dominican Republic,confirmed,4126
+2020-04-18,Dominican Republic,confirmed,4335
 2020-01-22,Ecuador,confirmed,0
 2020-01-23,Ecuador,confirmed,0
 2020-01-24,Ecuador,confirmed,0
@@ -3607,6 +3865,12 @@ date,state,type,cases
 2020-04-10,Ecuador,confirmed,7161
 2020-04-11,Ecuador,confirmed,7257
 2020-04-12,Ecuador,confirmed,7466
+2020-04-13,Ecuador,confirmed,7529
+2020-04-14,Ecuador,confirmed,7603
+2020-04-15,Ecuador,confirmed,7858
+2020-04-16,Ecuador,confirmed,8225
+2020-04-17,Ecuador,confirmed,8450
+2020-04-18,Ecuador,confirmed,9022
 2020-01-22,Egypt,confirmed,0
 2020-01-23,Egypt,confirmed,0
 2020-01-24,Egypt,confirmed,0
@@ -3689,6 +3953,12 @@ date,state,type,cases
 2020-04-10,Egypt,confirmed,1794
 2020-04-11,Egypt,confirmed,1939
 2020-04-12,Egypt,confirmed,2065
+2020-04-13,Egypt,confirmed,2190
+2020-04-14,Egypt,confirmed,2350
+2020-04-15,Egypt,confirmed,2505
+2020-04-16,Egypt,confirmed,2673
+2020-04-17,Egypt,confirmed,2844
+2020-04-18,Egypt,confirmed,3032
 2020-01-22,El Salvador,confirmed,0
 2020-01-23,El Salvador,confirmed,0
 2020-01-24,El Salvador,confirmed,0
@@ -3771,6 +4041,12 @@ date,state,type,cases
 2020-04-10,El Salvador,confirmed,117
 2020-04-11,El Salvador,confirmed,118
 2020-04-12,El Salvador,confirmed,125
+2020-04-13,El Salvador,confirmed,137
+2020-04-14,El Salvador,confirmed,149
+2020-04-15,El Salvador,confirmed,159
+2020-04-16,El Salvador,confirmed,164
+2020-04-17,El Salvador,confirmed,177
+2020-04-18,El Salvador,confirmed,190
 2020-01-22,Equatorial Guinea,confirmed,0
 2020-01-23,Equatorial Guinea,confirmed,0
 2020-01-24,Equatorial Guinea,confirmed,0
@@ -3853,6 +4129,12 @@ date,state,type,cases
 2020-04-10,Equatorial Guinea,confirmed,18
 2020-04-11,Equatorial Guinea,confirmed,18
 2020-04-12,Equatorial Guinea,confirmed,21
+2020-04-13,Equatorial Guinea,confirmed,21
+2020-04-14,Equatorial Guinea,confirmed,41
+2020-04-15,Equatorial Guinea,confirmed,51
+2020-04-16,Equatorial Guinea,confirmed,51
+2020-04-17,Equatorial Guinea,confirmed,79
+2020-04-18,Equatorial Guinea,confirmed,79
 2020-01-22,Eritrea,confirmed,0
 2020-01-23,Eritrea,confirmed,0
 2020-01-24,Eritrea,confirmed,0
@@ -3935,6 +4217,12 @@ date,state,type,cases
 2020-04-10,Eritrea,confirmed,34
 2020-04-11,Eritrea,confirmed,34
 2020-04-12,Eritrea,confirmed,34
+2020-04-13,Eritrea,confirmed,34
+2020-04-14,Eritrea,confirmed,34
+2020-04-15,Eritrea,confirmed,35
+2020-04-16,Eritrea,confirmed,35
+2020-04-17,Eritrea,confirmed,35
+2020-04-18,Eritrea,confirmed,39
 2020-01-22,Estonia,confirmed,0
 2020-01-23,Estonia,confirmed,0
 2020-01-24,Estonia,confirmed,0
@@ -4017,6 +4305,12 @@ date,state,type,cases
 2020-04-10,Estonia,confirmed,1258
 2020-04-11,Estonia,confirmed,1304
 2020-04-12,Estonia,confirmed,1309
+2020-04-13,Estonia,confirmed,1332
+2020-04-14,Estonia,confirmed,1373
+2020-04-15,Estonia,confirmed,1400
+2020-04-16,Estonia,confirmed,1434
+2020-04-17,Estonia,confirmed,1459
+2020-04-18,Estonia,confirmed,1512
 2020-01-22,Eswatini,confirmed,0
 2020-01-23,Eswatini,confirmed,0
 2020-01-24,Eswatini,confirmed,0
@@ -4099,6 +4393,12 @@ date,state,type,cases
 2020-04-10,Eswatini,confirmed,12
 2020-04-11,Eswatini,confirmed,12
 2020-04-12,Eswatini,confirmed,14
+2020-04-13,Eswatini,confirmed,15
+2020-04-14,Eswatini,confirmed,15
+2020-04-15,Eswatini,confirmed,15
+2020-04-16,Eswatini,confirmed,16
+2020-04-17,Eswatini,confirmed,16
+2020-04-18,Eswatini,confirmed,22
 2020-01-22,Ethiopia,confirmed,0
 2020-01-23,Ethiopia,confirmed,0
 2020-01-24,Ethiopia,confirmed,0
@@ -4181,6 +4481,12 @@ date,state,type,cases
 2020-04-10,Ethiopia,confirmed,65
 2020-04-11,Ethiopia,confirmed,69
 2020-04-12,Ethiopia,confirmed,71
+2020-04-13,Ethiopia,confirmed,74
+2020-04-14,Ethiopia,confirmed,82
+2020-04-15,Ethiopia,confirmed,85
+2020-04-16,Ethiopia,confirmed,92
+2020-04-17,Ethiopia,confirmed,96
+2020-04-18,Ethiopia,confirmed,105
 2020-01-22,Fiji,confirmed,0
 2020-01-23,Fiji,confirmed,0
 2020-01-24,Fiji,confirmed,0
@@ -4263,6 +4569,12 @@ date,state,type,cases
 2020-04-10,Fiji,confirmed,16
 2020-04-11,Fiji,confirmed,16
 2020-04-12,Fiji,confirmed,16
+2020-04-13,Fiji,confirmed,16
+2020-04-14,Fiji,confirmed,16
+2020-04-15,Fiji,confirmed,16
+2020-04-16,Fiji,confirmed,17
+2020-04-17,Fiji,confirmed,17
+2020-04-18,Fiji,confirmed,17
 2020-01-22,Finland,confirmed,0
 2020-01-23,Finland,confirmed,0
 2020-01-24,Finland,confirmed,0
@@ -4345,6 +4657,12 @@ date,state,type,cases
 2020-04-10,Finland,confirmed,2769
 2020-04-11,Finland,confirmed,2905
 2020-04-12,Finland,confirmed,2974
+2020-04-13,Finland,confirmed,3064
+2020-04-14,Finland,confirmed,3161
+2020-04-15,Finland,confirmed,3237
+2020-04-16,Finland,confirmed,3369
+2020-04-17,Finland,confirmed,3489
+2020-04-18,Finland,confirmed,3681
 2020-01-22,France,confirmed,0
 2020-01-23,France,confirmed,0
 2020-01-24,France,confirmed,2
@@ -4418,15 +4736,21 @@ date,state,type,cases
 2020-04-01,France,confirmed,56989
 2020-04-02,France,confirmed,59105
 2020-04-03,France,confirmed,64338
-2020-04-04,France,confirmed,89953
-2020-04-05,France,confirmed,92839
-2020-04-06,France,confirmed,98010
-2020-04-07,France,confirmed,109069
-2020-04-08,France,confirmed,112950
-2020-04-09,France,confirmed,117749
-2020-04-10,France,confirmed,124869
-2020-04-11,France,confirmed,129654
-2020-04-12,France,confirmed,132591
+2020-04-04,France,confirmed,68605
+2020-04-05,France,confirmed,70478
+2020-04-06,France,confirmed,74390
+2020-04-07,France,confirmed,78167
+2020-04-08,France,confirmed,82048
+2020-04-09,France,confirmed,86334
+2020-04-10,France,confirmed,90676
+2020-04-11,France,confirmed,93790
+2020-04-12,France,confirmed,120633
+2020-04-13,France,confirmed,124298
+2020-04-14,France,confirmed,130253
+2020-04-15,France,confirmed,133470
+2020-04-16,France,confirmed,145960
+2020-04-17,France,confirmed,147969
+2020-04-18,France,confirmed,147969
 2020-01-22,Gabon,confirmed,0
 2020-01-23,Gabon,confirmed,0
 2020-01-24,Gabon,confirmed,0
@@ -4509,6 +4833,12 @@ date,state,type,cases
 2020-04-10,Gabon,confirmed,44
 2020-04-11,Gabon,confirmed,46
 2020-04-12,Gabon,confirmed,49
+2020-04-13,Gabon,confirmed,57
+2020-04-14,Gabon,confirmed,57
+2020-04-15,Gabon,confirmed,80
+2020-04-16,Gabon,confirmed,80
+2020-04-17,Gabon,confirmed,108
+2020-04-18,Gabon,confirmed,108
 2020-01-22,Gambia,confirmed,0
 2020-01-23,Gambia,confirmed,0
 2020-01-24,Gambia,confirmed,0
@@ -4591,6 +4921,12 @@ date,state,type,cases
 2020-04-10,Gambia,confirmed,4
 2020-04-11,Gambia,confirmed,9
 2020-04-12,Gambia,confirmed,9
+2020-04-13,Gambia,confirmed,9
+2020-04-14,Gambia,confirmed,9
+2020-04-15,Gambia,confirmed,9
+2020-04-16,Gambia,confirmed,9
+2020-04-17,Gambia,confirmed,9
+2020-04-18,Gambia,confirmed,9
 2020-01-22,Georgia,confirmed,0
 2020-01-23,Georgia,confirmed,0
 2020-01-24,Georgia,confirmed,0
@@ -4673,6 +5009,12 @@ date,state,type,cases
 2020-04-10,Georgia,confirmed,234
 2020-04-11,Georgia,confirmed,242
 2020-04-12,Georgia,confirmed,257
+2020-04-13,Georgia,confirmed,272
+2020-04-14,Georgia,confirmed,300
+2020-04-15,Georgia,confirmed,306
+2020-04-16,Georgia,confirmed,348
+2020-04-17,Georgia,confirmed,370
+2020-04-18,Georgia,confirmed,388
 2020-01-22,Germany,confirmed,0
 2020-01-23,Germany,confirmed,0
 2020-01-24,Germany,confirmed,0
@@ -4755,6 +5097,12 @@ date,state,type,cases
 2020-04-10,Germany,confirmed,122171
 2020-04-11,Germany,confirmed,124908
 2020-04-12,Germany,confirmed,127854
+2020-04-13,Germany,confirmed,130072
+2020-04-14,Germany,confirmed,131359
+2020-04-15,Germany,confirmed,134753
+2020-04-16,Germany,confirmed,137698
+2020-04-17,Germany,confirmed,141397
+2020-04-18,Germany,confirmed,143342
 2020-01-22,Ghana,confirmed,0
 2020-01-23,Ghana,confirmed,0
 2020-01-24,Ghana,confirmed,0
@@ -4837,6 +5185,12 @@ date,state,type,cases
 2020-04-10,Ghana,confirmed,378
 2020-04-11,Ghana,confirmed,408
 2020-04-12,Ghana,confirmed,566
+2020-04-13,Ghana,confirmed,566
+2020-04-14,Ghana,confirmed,636
+2020-04-15,Ghana,confirmed,636
+2020-04-16,Ghana,confirmed,641
+2020-04-17,Ghana,confirmed,641
+2020-04-18,Ghana,confirmed,834
 2020-01-22,Greece,confirmed,0
 2020-01-23,Greece,confirmed,0
 2020-01-24,Greece,confirmed,0
@@ -4919,6 +5273,12 @@ date,state,type,cases
 2020-04-10,Greece,confirmed,2011
 2020-04-11,Greece,confirmed,2081
 2020-04-12,Greece,confirmed,2114
+2020-04-13,Greece,confirmed,2145
+2020-04-14,Greece,confirmed,2170
+2020-04-15,Greece,confirmed,2192
+2020-04-16,Greece,confirmed,2207
+2020-04-17,Greece,confirmed,2224
+2020-04-18,Greece,confirmed,2235
 2020-01-22,Guatemala,confirmed,0
 2020-01-23,Guatemala,confirmed,0
 2020-01-24,Guatemala,confirmed,0
@@ -5001,6 +5361,12 @@ date,state,type,cases
 2020-04-10,Guatemala,confirmed,126
 2020-04-11,Guatemala,confirmed,137
 2020-04-12,Guatemala,confirmed,155
+2020-04-13,Guatemala,confirmed,156
+2020-04-14,Guatemala,confirmed,167
+2020-04-15,Guatemala,confirmed,180
+2020-04-16,Guatemala,confirmed,196
+2020-04-17,Guatemala,confirmed,214
+2020-04-18,Guatemala,confirmed,235
 2020-01-22,Guinea,confirmed,0
 2020-01-23,Guinea,confirmed,0
 2020-01-24,Guinea,confirmed,0
@@ -5083,6 +5449,12 @@ date,state,type,cases
 2020-04-10,Guinea,confirmed,212
 2020-04-11,Guinea,confirmed,250
 2020-04-12,Guinea,confirmed,250
+2020-04-13,Guinea,confirmed,319
+2020-04-14,Guinea,confirmed,363
+2020-04-15,Guinea,confirmed,404
+2020-04-16,Guinea,confirmed,438
+2020-04-17,Guinea,confirmed,477
+2020-04-18,Guinea,confirmed,518
 2020-01-22,Guyana,confirmed,0
 2020-01-23,Guyana,confirmed,0
 2020-01-24,Guyana,confirmed,0
@@ -5165,6 +5537,12 @@ date,state,type,cases
 2020-04-10,Guyana,confirmed,37
 2020-04-11,Guyana,confirmed,45
 2020-04-12,Guyana,confirmed,45
+2020-04-13,Guyana,confirmed,45
+2020-04-14,Guyana,confirmed,47
+2020-04-15,Guyana,confirmed,55
+2020-04-16,Guyana,confirmed,55
+2020-04-17,Guyana,confirmed,63
+2020-04-18,Guyana,confirmed,63
 2020-01-22,Haiti,confirmed,0
 2020-01-23,Haiti,confirmed,0
 2020-01-24,Haiti,confirmed,0
@@ -5247,6 +5625,12 @@ date,state,type,cases
 2020-04-10,Haiti,confirmed,31
 2020-04-11,Haiti,confirmed,33
 2020-04-12,Haiti,confirmed,33
+2020-04-13,Haiti,confirmed,40
+2020-04-14,Haiti,confirmed,40
+2020-04-15,Haiti,confirmed,41
+2020-04-16,Haiti,confirmed,41
+2020-04-17,Haiti,confirmed,43
+2020-04-18,Haiti,confirmed,44
 2020-01-22,Holy See,confirmed,0
 2020-01-23,Holy See,confirmed,0
 2020-01-24,Holy See,confirmed,0
@@ -5329,6 +5713,12 @@ date,state,type,cases
 2020-04-10,Holy See,confirmed,8
 2020-04-11,Holy See,confirmed,8
 2020-04-12,Holy See,confirmed,8
+2020-04-13,Holy See,confirmed,8
+2020-04-14,Holy See,confirmed,8
+2020-04-15,Holy See,confirmed,8
+2020-04-16,Holy See,confirmed,8
+2020-04-17,Holy See,confirmed,8
+2020-04-18,Holy See,confirmed,8
 2020-01-22,Honduras,confirmed,0
 2020-01-23,Honduras,confirmed,0
 2020-01-24,Honduras,confirmed,0
@@ -5411,6 +5801,12 @@ date,state,type,cases
 2020-04-10,Honduras,confirmed,382
 2020-04-11,Honduras,confirmed,392
 2020-04-12,Honduras,confirmed,393
+2020-04-13,Honduras,confirmed,397
+2020-04-14,Honduras,confirmed,407
+2020-04-15,Honduras,confirmed,419
+2020-04-16,Honduras,confirmed,426
+2020-04-17,Honduras,confirmed,442
+2020-04-18,Honduras,confirmed,457
 2020-01-22,Hungary,confirmed,0
 2020-01-23,Hungary,confirmed,0
 2020-01-24,Hungary,confirmed,0
@@ -5493,6 +5889,12 @@ date,state,type,cases
 2020-04-10,Hungary,confirmed,1190
 2020-04-11,Hungary,confirmed,1310
 2020-04-12,Hungary,confirmed,1410
+2020-04-13,Hungary,confirmed,1458
+2020-04-14,Hungary,confirmed,1512
+2020-04-15,Hungary,confirmed,1579
+2020-04-16,Hungary,confirmed,1652
+2020-04-17,Hungary,confirmed,1763
+2020-04-18,Hungary,confirmed,1834
 2020-01-22,Iceland,confirmed,0
 2020-01-23,Iceland,confirmed,0
 2020-01-24,Iceland,confirmed,0
@@ -5575,6 +5977,12 @@ date,state,type,cases
 2020-04-10,Iceland,confirmed,1675
 2020-04-11,Iceland,confirmed,1689
 2020-04-12,Iceland,confirmed,1701
+2020-04-13,Iceland,confirmed,1711
+2020-04-14,Iceland,confirmed,1720
+2020-04-15,Iceland,confirmed,1727
+2020-04-16,Iceland,confirmed,1739
+2020-04-17,Iceland,confirmed,1754
+2020-04-18,Iceland,confirmed,1760
 2020-01-22,India,confirmed,0
 2020-01-23,India,confirmed,0
 2020-01-24,India,confirmed,0
@@ -5657,6 +6065,12 @@ date,state,type,cases
 2020-04-10,India,confirmed,7598
 2020-04-11,India,confirmed,8446
 2020-04-12,India,confirmed,9205
+2020-04-13,India,confirmed,10453
+2020-04-14,India,confirmed,11487
+2020-04-15,India,confirmed,12322
+2020-04-16,India,confirmed,13430
+2020-04-17,India,confirmed,14352
+2020-04-18,India,confirmed,15722
 2020-01-22,Indonesia,confirmed,0
 2020-01-23,Indonesia,confirmed,0
 2020-01-24,Indonesia,confirmed,0
@@ -5739,6 +6153,12 @@ date,state,type,cases
 2020-04-10,Indonesia,confirmed,3512
 2020-04-11,Indonesia,confirmed,3842
 2020-04-12,Indonesia,confirmed,4241
+2020-04-13,Indonesia,confirmed,4557
+2020-04-14,Indonesia,confirmed,4839
+2020-04-15,Indonesia,confirmed,5136
+2020-04-16,Indonesia,confirmed,5516
+2020-04-17,Indonesia,confirmed,5923
+2020-04-18,Indonesia,confirmed,6248
 2020-01-22,Iran,confirmed,0
 2020-01-23,Iran,confirmed,0
 2020-01-24,Iran,confirmed,0
@@ -5821,6 +6241,12 @@ date,state,type,cases
 2020-04-10,Iran,confirmed,68192
 2020-04-11,Iran,confirmed,70029
 2020-04-12,Iran,confirmed,71686
+2020-04-13,Iran,confirmed,73303
+2020-04-14,Iran,confirmed,74877
+2020-04-15,Iran,confirmed,76389
+2020-04-16,Iran,confirmed,77995
+2020-04-17,Iran,confirmed,79494
+2020-04-18,Iran,confirmed,80868
 2020-01-22,Iraq,confirmed,0
 2020-01-23,Iraq,confirmed,0
 2020-01-24,Iraq,confirmed,0
@@ -5903,6 +6329,12 @@ date,state,type,cases
 2020-04-10,Iraq,confirmed,1279
 2020-04-11,Iraq,confirmed,1318
 2020-04-12,Iraq,confirmed,1352
+2020-04-13,Iraq,confirmed,1378
+2020-04-14,Iraq,confirmed,1400
+2020-04-15,Iraq,confirmed,1415
+2020-04-16,Iraq,confirmed,1434
+2020-04-17,Iraq,confirmed,1482
+2020-04-18,Iraq,confirmed,1513
 2020-01-22,Ireland,confirmed,0
 2020-01-23,Ireland,confirmed,0
 2020-01-24,Ireland,confirmed,0
@@ -5985,6 +6417,12 @@ date,state,type,cases
 2020-04-10,Ireland,confirmed,8089
 2020-04-11,Ireland,confirmed,8928
 2020-04-12,Ireland,confirmed,9655
+2020-04-13,Ireland,confirmed,10647
+2020-04-14,Ireland,confirmed,11479
+2020-04-15,Ireland,confirmed,12547
+2020-04-16,Ireland,confirmed,13271
+2020-04-17,Ireland,confirmed,13980
+2020-04-18,Ireland,confirmed,14758
 2020-01-22,Israel,confirmed,0
 2020-01-23,Israel,confirmed,0
 2020-01-24,Israel,confirmed,0
@@ -6067,6 +6505,12 @@ date,state,type,cases
 2020-04-10,Israel,confirmed,10408
 2020-04-11,Israel,confirmed,10743
 2020-04-12,Israel,confirmed,11145
+2020-04-13,Israel,confirmed,11586
+2020-04-14,Israel,confirmed,12046
+2020-04-15,Israel,confirmed,12501
+2020-04-16,Israel,confirmed,12758
+2020-04-17,Israel,confirmed,12982
+2020-04-18,Israel,confirmed,13265
 2020-01-22,Italy,confirmed,0
 2020-01-23,Italy,confirmed,0
 2020-01-24,Italy,confirmed,0
@@ -6149,6 +6593,12 @@ date,state,type,cases
 2020-04-10,Italy,confirmed,147577
 2020-04-11,Italy,confirmed,152271
 2020-04-12,Italy,confirmed,156363
+2020-04-13,Italy,confirmed,159516
+2020-04-14,Italy,confirmed,162488
+2020-04-15,Italy,confirmed,165155
+2020-04-16,Italy,confirmed,168941
+2020-04-17,Italy,confirmed,172434
+2020-04-18,Italy,confirmed,175925
 2020-01-22,Jamaica,confirmed,0
 2020-01-23,Jamaica,confirmed,0
 2020-01-24,Jamaica,confirmed,0
@@ -6231,6 +6681,12 @@ date,state,type,cases
 2020-04-10,Jamaica,confirmed,63
 2020-04-11,Jamaica,confirmed,65
 2020-04-12,Jamaica,confirmed,69
+2020-04-13,Jamaica,confirmed,73
+2020-04-14,Jamaica,confirmed,73
+2020-04-15,Jamaica,confirmed,125
+2020-04-16,Jamaica,confirmed,143
+2020-04-17,Jamaica,confirmed,143
+2020-04-18,Jamaica,confirmed,163
 2020-01-22,Japan,confirmed,2
 2020-01-23,Japan,confirmed,2
 2020-01-24,Japan,confirmed,2
@@ -6313,6 +6769,12 @@ date,state,type,cases
 2020-04-10,Japan,confirmed,5530
 2020-04-11,Japan,confirmed,6005
 2020-04-12,Japan,confirmed,6748
+2020-04-13,Japan,confirmed,7370
+2020-04-14,Japan,confirmed,7645
+2020-04-15,Japan,confirmed,8100
+2020-04-16,Japan,confirmed,8626
+2020-04-17,Japan,confirmed,9787
+2020-04-18,Japan,confirmed,10296
 2020-01-22,Jordan,confirmed,0
 2020-01-23,Jordan,confirmed,0
 2020-01-24,Jordan,confirmed,0
@@ -6395,6 +6857,12 @@ date,state,type,cases
 2020-04-10,Jordan,confirmed,372
 2020-04-11,Jordan,confirmed,381
 2020-04-12,Jordan,confirmed,389
+2020-04-13,Jordan,confirmed,391
+2020-04-14,Jordan,confirmed,397
+2020-04-15,Jordan,confirmed,401
+2020-04-16,Jordan,confirmed,402
+2020-04-17,Jordan,confirmed,407
+2020-04-18,Jordan,confirmed,413
 2020-01-22,Kazakhstan,confirmed,0
 2020-01-23,Kazakhstan,confirmed,0
 2020-01-24,Kazakhstan,confirmed,0
@@ -6477,6 +6945,12 @@ date,state,type,cases
 2020-04-10,Kazakhstan,confirmed,812
 2020-04-11,Kazakhstan,confirmed,865
 2020-04-12,Kazakhstan,confirmed,951
+2020-04-13,Kazakhstan,confirmed,1091
+2020-04-14,Kazakhstan,confirmed,1232
+2020-04-15,Kazakhstan,confirmed,1295
+2020-04-16,Kazakhstan,confirmed,1402
+2020-04-17,Kazakhstan,confirmed,1546
+2020-04-18,Kazakhstan,confirmed,1615
 2020-01-22,Kenya,confirmed,0
 2020-01-23,Kenya,confirmed,0
 2020-01-24,Kenya,confirmed,0
@@ -6559,6 +7033,12 @@ date,state,type,cases
 2020-04-10,Kenya,confirmed,189
 2020-04-11,Kenya,confirmed,191
 2020-04-12,Kenya,confirmed,197
+2020-04-13,Kenya,confirmed,208
+2020-04-14,Kenya,confirmed,216
+2020-04-15,Kenya,confirmed,225
+2020-04-16,Kenya,confirmed,234
+2020-04-17,Kenya,confirmed,246
+2020-04-18,Kenya,confirmed,262
 2020-01-22,"Korea, South",confirmed,1
 2020-01-23,"Korea, South",confirmed,1
 2020-01-24,"Korea, South",confirmed,2
@@ -6641,6 +7121,12 @@ date,state,type,cases
 2020-04-10,"Korea, South",confirmed,10450
 2020-04-11,"Korea, South",confirmed,10480
 2020-04-12,"Korea, South",confirmed,10512
+2020-04-13,"Korea, South",confirmed,10537
+2020-04-14,"Korea, South",confirmed,10564
+2020-04-15,"Korea, South",confirmed,10591
+2020-04-16,"Korea, South",confirmed,10613
+2020-04-17,"Korea, South",confirmed,10635
+2020-04-18,"Korea, South",confirmed,10653
 2020-01-22,Kuwait,confirmed,0
 2020-01-23,Kuwait,confirmed,0
 2020-01-24,Kuwait,confirmed,0
@@ -6723,6 +7209,12 @@ date,state,type,cases
 2020-04-10,Kuwait,confirmed,993
 2020-04-11,Kuwait,confirmed,1154
 2020-04-12,Kuwait,confirmed,1234
+2020-04-13,Kuwait,confirmed,1300
+2020-04-14,Kuwait,confirmed,1355
+2020-04-15,Kuwait,confirmed,1405
+2020-04-16,Kuwait,confirmed,1524
+2020-04-17,Kuwait,confirmed,1658
+2020-04-18,Kuwait,confirmed,1751
 2020-01-22,Kyrgyzstan,confirmed,0
 2020-01-23,Kyrgyzstan,confirmed,0
 2020-01-24,Kyrgyzstan,confirmed,0
@@ -6805,6 +7297,12 @@ date,state,type,cases
 2020-04-10,Kyrgyzstan,confirmed,298
 2020-04-11,Kyrgyzstan,confirmed,339
 2020-04-12,Kyrgyzstan,confirmed,377
+2020-04-13,Kyrgyzstan,confirmed,419
+2020-04-14,Kyrgyzstan,confirmed,430
+2020-04-15,Kyrgyzstan,confirmed,449
+2020-04-16,Kyrgyzstan,confirmed,466
+2020-04-17,Kyrgyzstan,confirmed,489
+2020-04-18,Kyrgyzstan,confirmed,506
 2020-01-22,Latvia,confirmed,0
 2020-01-23,Latvia,confirmed,0
 2020-01-24,Latvia,confirmed,0
@@ -6887,6 +7385,12 @@ date,state,type,cases
 2020-04-10,Latvia,confirmed,612
 2020-04-11,Latvia,confirmed,630
 2020-04-12,Latvia,confirmed,651
+2020-04-13,Latvia,confirmed,655
+2020-04-14,Latvia,confirmed,657
+2020-04-15,Latvia,confirmed,666
+2020-04-16,Latvia,confirmed,675
+2020-04-17,Latvia,confirmed,682
+2020-04-18,Latvia,confirmed,712
 2020-01-22,Lebanon,confirmed,0
 2020-01-23,Lebanon,confirmed,0
 2020-01-24,Lebanon,confirmed,0
@@ -6969,6 +7473,12 @@ date,state,type,cases
 2020-04-10,Lebanon,confirmed,609
 2020-04-11,Lebanon,confirmed,619
 2020-04-12,Lebanon,confirmed,630
+2020-04-13,Lebanon,confirmed,632
+2020-04-14,Lebanon,confirmed,641
+2020-04-15,Lebanon,confirmed,658
+2020-04-16,Lebanon,confirmed,663
+2020-04-17,Lebanon,confirmed,668
+2020-04-18,Lebanon,confirmed,672
 2020-01-22,Liberia,confirmed,0
 2020-01-23,Liberia,confirmed,0
 2020-01-24,Liberia,confirmed,0
@@ -7051,6 +7561,12 @@ date,state,type,cases
 2020-04-10,Liberia,confirmed,37
 2020-04-11,Liberia,confirmed,48
 2020-04-12,Liberia,confirmed,50
+2020-04-13,Liberia,confirmed,59
+2020-04-14,Liberia,confirmed,59
+2020-04-15,Liberia,confirmed,59
+2020-04-16,Liberia,confirmed,59
+2020-04-17,Liberia,confirmed,76
+2020-04-18,Liberia,confirmed,76
 2020-01-22,Liechtenstein,confirmed,0
 2020-01-23,Liechtenstein,confirmed,0
 2020-01-24,Liechtenstein,confirmed,0
@@ -7133,6 +7649,12 @@ date,state,type,cases
 2020-04-10,Liechtenstein,confirmed,79
 2020-04-11,Liechtenstein,confirmed,79
 2020-04-12,Liechtenstein,confirmed,79
+2020-04-13,Liechtenstein,confirmed,79
+2020-04-14,Liechtenstein,confirmed,79
+2020-04-15,Liechtenstein,confirmed,79
+2020-04-16,Liechtenstein,confirmed,79
+2020-04-17,Liechtenstein,confirmed,79
+2020-04-18,Liechtenstein,confirmed,79
 2020-01-22,Lithuania,confirmed,0
 2020-01-23,Lithuania,confirmed,0
 2020-01-24,Lithuania,confirmed,0
@@ -7215,6 +7737,12 @@ date,state,type,cases
 2020-04-10,Lithuania,confirmed,999
 2020-04-11,Lithuania,confirmed,1026
 2020-04-12,Lithuania,confirmed,1053
+2020-04-13,Lithuania,confirmed,1062
+2020-04-14,Lithuania,confirmed,1070
+2020-04-15,Lithuania,confirmed,1091
+2020-04-16,Lithuania,confirmed,1128
+2020-04-17,Lithuania,confirmed,1149
+2020-04-18,Lithuania,confirmed,1239
 2020-01-22,Luxembourg,confirmed,0
 2020-01-23,Luxembourg,confirmed,0
 2020-01-24,Luxembourg,confirmed,0
@@ -7297,6 +7825,12 @@ date,state,type,cases
 2020-04-10,Luxembourg,confirmed,3223
 2020-04-11,Luxembourg,confirmed,3270
 2020-04-12,Luxembourg,confirmed,3281
+2020-04-13,Luxembourg,confirmed,3292
+2020-04-14,Luxembourg,confirmed,3307
+2020-04-15,Luxembourg,confirmed,3373
+2020-04-16,Luxembourg,confirmed,3444
+2020-04-17,Luxembourg,confirmed,3480
+2020-04-18,Luxembourg,confirmed,3537
 2020-01-22,Madagascar,confirmed,0
 2020-01-23,Madagascar,confirmed,0
 2020-01-24,Madagascar,confirmed,0
@@ -7379,6 +7913,12 @@ date,state,type,cases
 2020-04-10,Madagascar,confirmed,93
 2020-04-11,Madagascar,confirmed,102
 2020-04-12,Madagascar,confirmed,106
+2020-04-13,Madagascar,confirmed,106
+2020-04-14,Madagascar,confirmed,108
+2020-04-15,Madagascar,confirmed,110
+2020-04-16,Madagascar,confirmed,111
+2020-04-17,Madagascar,confirmed,117
+2020-04-18,Madagascar,confirmed,120
 2020-01-22,Malaysia,confirmed,0
 2020-01-23,Malaysia,confirmed,0
 2020-01-24,Malaysia,confirmed,0
@@ -7461,6 +8001,12 @@ date,state,type,cases
 2020-04-10,Malaysia,confirmed,4346
 2020-04-11,Malaysia,confirmed,4530
 2020-04-12,Malaysia,confirmed,4683
+2020-04-13,Malaysia,confirmed,4817
+2020-04-14,Malaysia,confirmed,4987
+2020-04-15,Malaysia,confirmed,5072
+2020-04-16,Malaysia,confirmed,5182
+2020-04-17,Malaysia,confirmed,5251
+2020-04-18,Malaysia,confirmed,5305
 2020-01-22,Maldives,confirmed,0
 2020-01-23,Maldives,confirmed,0
 2020-01-24,Maldives,confirmed,0
@@ -7543,6 +8089,12 @@ date,state,type,cases
 2020-04-10,Maldives,confirmed,19
 2020-04-11,Maldives,confirmed,19
 2020-04-12,Maldives,confirmed,20
+2020-04-13,Maldives,confirmed,20
+2020-04-14,Maldives,confirmed,20
+2020-04-15,Maldives,confirmed,22
+2020-04-16,Maldives,confirmed,25
+2020-04-17,Maldives,confirmed,28
+2020-04-18,Maldives,confirmed,35
 2020-01-22,Malta,confirmed,0
 2020-01-23,Malta,confirmed,0
 2020-01-24,Malta,confirmed,0
@@ -7625,6 +8177,12 @@ date,state,type,cases
 2020-04-10,Malta,confirmed,350
 2020-04-11,Malta,confirmed,370
 2020-04-12,Malta,confirmed,378
+2020-04-13,Malta,confirmed,384
+2020-04-14,Malta,confirmed,393
+2020-04-15,Malta,confirmed,399
+2020-04-16,Malta,confirmed,412
+2020-04-17,Malta,confirmed,422
+2020-04-18,Malta,confirmed,426
 2020-01-22,Mauritania,confirmed,0
 2020-01-23,Mauritania,confirmed,0
 2020-01-24,Mauritania,confirmed,0
@@ -7707,6 +8265,12 @@ date,state,type,cases
 2020-04-10,Mauritania,confirmed,7
 2020-04-11,Mauritania,confirmed,7
 2020-04-12,Mauritania,confirmed,7
+2020-04-13,Mauritania,confirmed,7
+2020-04-14,Mauritania,confirmed,7
+2020-04-15,Mauritania,confirmed,7
+2020-04-16,Mauritania,confirmed,7
+2020-04-17,Mauritania,confirmed,7
+2020-04-18,Mauritania,confirmed,7
 2020-01-22,Mauritius,confirmed,0
 2020-01-23,Mauritius,confirmed,0
 2020-01-24,Mauritius,confirmed,0
@@ -7789,6 +8353,12 @@ date,state,type,cases
 2020-04-10,Mauritius,confirmed,318
 2020-04-11,Mauritius,confirmed,319
 2020-04-12,Mauritius,confirmed,324
+2020-04-13,Mauritius,confirmed,324
+2020-04-14,Mauritius,confirmed,324
+2020-04-15,Mauritius,confirmed,324
+2020-04-16,Mauritius,confirmed,324
+2020-04-17,Mauritius,confirmed,324
+2020-04-18,Mauritius,confirmed,325
 2020-01-22,Mexico,confirmed,0
 2020-01-23,Mexico,confirmed,0
 2020-01-24,Mexico,confirmed,0
@@ -7871,6 +8441,12 @@ date,state,type,cases
 2020-04-10,Mexico,confirmed,3441
 2020-04-11,Mexico,confirmed,3844
 2020-04-12,Mexico,confirmed,4219
+2020-04-13,Mexico,confirmed,4661
+2020-04-14,Mexico,confirmed,5014
+2020-04-15,Mexico,confirmed,5399
+2020-04-16,Mexico,confirmed,5847
+2020-04-17,Mexico,confirmed,6297
+2020-04-18,Mexico,confirmed,6875
 2020-01-22,Moldova,confirmed,0
 2020-01-23,Moldova,confirmed,0
 2020-01-24,Moldova,confirmed,0
@@ -7953,6 +8529,12 @@ date,state,type,cases
 2020-04-10,Moldova,confirmed,1438
 2020-04-11,Moldova,confirmed,1560
 2020-04-12,Moldova,confirmed,1662
+2020-04-13,Moldova,confirmed,1712
+2020-04-14,Moldova,confirmed,1934
+2020-04-15,Moldova,confirmed,2049
+2020-04-16,Moldova,confirmed,2154
+2020-04-17,Moldova,confirmed,2264
+2020-04-18,Moldova,confirmed,2378
 2020-01-22,Monaco,confirmed,0
 2020-01-23,Monaco,confirmed,0
 2020-01-24,Monaco,confirmed,0
@@ -8035,6 +8617,12 @@ date,state,type,cases
 2020-04-10,Monaco,confirmed,90
 2020-04-11,Monaco,confirmed,92
 2020-04-12,Monaco,confirmed,93
+2020-04-13,Monaco,confirmed,93
+2020-04-14,Monaco,confirmed,93
+2020-04-15,Monaco,confirmed,93
+2020-04-16,Monaco,confirmed,93
+2020-04-17,Monaco,confirmed,94
+2020-04-18,Monaco,confirmed,94
 2020-01-22,Mongolia,confirmed,0
 2020-01-23,Mongolia,confirmed,0
 2020-01-24,Mongolia,confirmed,0
@@ -8117,6 +8705,12 @@ date,state,type,cases
 2020-04-10,Mongolia,confirmed,16
 2020-04-11,Mongolia,confirmed,16
 2020-04-12,Mongolia,confirmed,16
+2020-04-13,Mongolia,confirmed,17
+2020-04-14,Mongolia,confirmed,30
+2020-04-15,Mongolia,confirmed,30
+2020-04-16,Mongolia,confirmed,31
+2020-04-17,Mongolia,confirmed,31
+2020-04-18,Mongolia,confirmed,31
 2020-01-22,Montenegro,confirmed,0
 2020-01-23,Montenegro,confirmed,0
 2020-01-24,Montenegro,confirmed,0
@@ -8199,6 +8793,12 @@ date,state,type,cases
 2020-04-10,Montenegro,confirmed,255
 2020-04-11,Montenegro,confirmed,263
 2020-04-12,Montenegro,confirmed,272
+2020-04-13,Montenegro,confirmed,274
+2020-04-14,Montenegro,confirmed,283
+2020-04-15,Montenegro,confirmed,288
+2020-04-16,Montenegro,confirmed,303
+2020-04-17,Montenegro,confirmed,303
+2020-04-18,Montenegro,confirmed,307
 2020-01-22,Morocco,confirmed,0
 2020-01-23,Morocco,confirmed,0
 2020-01-24,Morocco,confirmed,0
@@ -8281,6 +8881,12 @@ date,state,type,cases
 2020-04-10,Morocco,confirmed,1448
 2020-04-11,Morocco,confirmed,1545
 2020-04-12,Morocco,confirmed,1661
+2020-04-13,Morocco,confirmed,1763
+2020-04-14,Morocco,confirmed,1888
+2020-04-15,Morocco,confirmed,2024
+2020-04-16,Morocco,confirmed,2283
+2020-04-17,Morocco,confirmed,2564
+2020-04-18,Morocco,confirmed,2685
 2020-01-22,Namibia,confirmed,0
 2020-01-23,Namibia,confirmed,0
 2020-01-24,Namibia,confirmed,0
@@ -8363,6 +8969,12 @@ date,state,type,cases
 2020-04-10,Namibia,confirmed,16
 2020-04-11,Namibia,confirmed,16
 2020-04-12,Namibia,confirmed,16
+2020-04-13,Namibia,confirmed,16
+2020-04-14,Namibia,confirmed,16
+2020-04-15,Namibia,confirmed,16
+2020-04-16,Namibia,confirmed,16
+2020-04-17,Namibia,confirmed,16
+2020-04-18,Namibia,confirmed,16
 2020-01-22,Nepal,confirmed,0
 2020-01-23,Nepal,confirmed,0
 2020-01-24,Nepal,confirmed,0
@@ -8445,6 +9057,12 @@ date,state,type,cases
 2020-04-10,Nepal,confirmed,9
 2020-04-11,Nepal,confirmed,9
 2020-04-12,Nepal,confirmed,12
+2020-04-13,Nepal,confirmed,14
+2020-04-14,Nepal,confirmed,16
+2020-04-15,Nepal,confirmed,16
+2020-04-16,Nepal,confirmed,16
+2020-04-17,Nepal,confirmed,30
+2020-04-18,Nepal,confirmed,31
 2020-01-22,Netherlands,confirmed,0
 2020-01-23,Netherlands,confirmed,0
 2020-01-24,Netherlands,confirmed,0
@@ -8527,6 +9145,12 @@ date,state,type,cases
 2020-04-10,Netherlands,confirmed,23097
 2020-04-11,Netherlands,confirmed,24413
 2020-04-12,Netherlands,confirmed,25587
+2020-04-13,Netherlands,confirmed,26551
+2020-04-14,Netherlands,confirmed,27419
+2020-04-15,Netherlands,confirmed,28153
+2020-04-16,Netherlands,confirmed,29214
+2020-04-17,Netherlands,confirmed,30449
+2020-04-18,Netherlands,confirmed,31589
 2020-01-22,New Zealand,confirmed,0
 2020-01-23,New Zealand,confirmed,0
 2020-01-24,New Zealand,confirmed,0
@@ -8609,6 +9233,12 @@ date,state,type,cases
 2020-04-10,New Zealand,confirmed,1283
 2020-04-11,New Zealand,confirmed,1312
 2020-04-12,New Zealand,confirmed,1330
+2020-04-13,New Zealand,confirmed,1349
+2020-04-14,New Zealand,confirmed,1366
+2020-04-15,New Zealand,confirmed,1386
+2020-04-16,New Zealand,confirmed,1401
+2020-04-17,New Zealand,confirmed,1409
+2020-04-18,New Zealand,confirmed,1422
 2020-01-22,Nicaragua,confirmed,0
 2020-01-23,Nicaragua,confirmed,0
 2020-01-24,Nicaragua,confirmed,0
@@ -8691,6 +9321,12 @@ date,state,type,cases
 2020-04-10,Nicaragua,confirmed,7
 2020-04-11,Nicaragua,confirmed,8
 2020-04-12,Nicaragua,confirmed,9
+2020-04-13,Nicaragua,confirmed,9
+2020-04-14,Nicaragua,confirmed,9
+2020-04-15,Nicaragua,confirmed,9
+2020-04-16,Nicaragua,confirmed,9
+2020-04-17,Nicaragua,confirmed,9
+2020-04-18,Nicaragua,confirmed,9
 2020-01-22,Niger,confirmed,0
 2020-01-23,Niger,confirmed,0
 2020-01-24,Niger,confirmed,0
@@ -8773,6 +9409,12 @@ date,state,type,cases
 2020-04-10,Niger,confirmed,438
 2020-04-11,Niger,confirmed,491
 2020-04-12,Niger,confirmed,529
+2020-04-13,Niger,confirmed,529
+2020-04-14,Niger,confirmed,570
+2020-04-15,Niger,confirmed,584
+2020-04-16,Niger,confirmed,584
+2020-04-17,Niger,confirmed,627
+2020-04-18,Niger,confirmed,639
 2020-01-22,Nigeria,confirmed,0
 2020-01-23,Nigeria,confirmed,0
 2020-01-24,Nigeria,confirmed,0
@@ -8855,6 +9497,12 @@ date,state,type,cases
 2020-04-10,Nigeria,confirmed,305
 2020-04-11,Nigeria,confirmed,318
 2020-04-12,Nigeria,confirmed,323
+2020-04-13,Nigeria,confirmed,343
+2020-04-14,Nigeria,confirmed,373
+2020-04-15,Nigeria,confirmed,407
+2020-04-16,Nigeria,confirmed,442
+2020-04-17,Nigeria,confirmed,493
+2020-04-18,Nigeria,confirmed,542
 2020-01-22,North Macedonia,confirmed,0
 2020-01-23,North Macedonia,confirmed,0
 2020-01-24,North Macedonia,confirmed,0
@@ -8937,6 +9585,12 @@ date,state,type,cases
 2020-04-10,North Macedonia,confirmed,711
 2020-04-11,North Macedonia,confirmed,760
 2020-04-12,North Macedonia,confirmed,828
+2020-04-13,North Macedonia,confirmed,854
+2020-04-14,North Macedonia,confirmed,908
+2020-04-15,North Macedonia,confirmed,974
+2020-04-16,North Macedonia,confirmed,1081
+2020-04-17,North Macedonia,confirmed,1117
+2020-04-18,North Macedonia,confirmed,1170
 2020-01-22,Norway,confirmed,0
 2020-01-23,Norway,confirmed,0
 2020-01-24,Norway,confirmed,0
@@ -9019,6 +9673,12 @@ date,state,type,cases
 2020-04-10,Norway,confirmed,6314
 2020-04-11,Norway,confirmed,6409
 2020-04-12,Norway,confirmed,6525
+2020-04-13,Norway,confirmed,6603
+2020-04-14,Norway,confirmed,6623
+2020-04-15,Norway,confirmed,6740
+2020-04-16,Norway,confirmed,6896
+2020-04-17,Norway,confirmed,6937
+2020-04-18,Norway,confirmed,7036
 2020-01-22,Oman,confirmed,0
 2020-01-23,Oman,confirmed,0
 2020-01-24,Oman,confirmed,0
@@ -9101,6 +9761,12 @@ date,state,type,cases
 2020-04-10,Oman,confirmed,484
 2020-04-11,Oman,confirmed,546
 2020-04-12,Oman,confirmed,599
+2020-04-13,Oman,confirmed,727
+2020-04-14,Oman,confirmed,813
+2020-04-15,Oman,confirmed,910
+2020-04-16,Oman,confirmed,1019
+2020-04-17,Oman,confirmed,1069
+2020-04-18,Oman,confirmed,1180
 2020-01-22,Pakistan,confirmed,0
 2020-01-23,Pakistan,confirmed,0
 2020-01-24,Pakistan,confirmed,0
@@ -9183,6 +9849,12 @@ date,state,type,cases
 2020-04-10,Pakistan,confirmed,4695
 2020-04-11,Pakistan,confirmed,5011
 2020-04-12,Pakistan,confirmed,5230
+2020-04-13,Pakistan,confirmed,5496
+2020-04-14,Pakistan,confirmed,5837
+2020-04-15,Pakistan,confirmed,6383
+2020-04-16,Pakistan,confirmed,6919
+2020-04-17,Pakistan,confirmed,7025
+2020-04-18,Pakistan,confirmed,7638
 2020-01-22,Panama,confirmed,0
 2020-01-23,Panama,confirmed,0
 2020-01-24,Panama,confirmed,0
@@ -9265,6 +9937,12 @@ date,state,type,cases
 2020-04-10,Panama,confirmed,2752
 2020-04-11,Panama,confirmed,2974
 2020-04-12,Panama,confirmed,3234
+2020-04-13,Panama,confirmed,3400
+2020-04-14,Panama,confirmed,3472
+2020-04-15,Panama,confirmed,3574
+2020-04-16,Panama,confirmed,3751
+2020-04-17,Panama,confirmed,4016
+2020-04-18,Panama,confirmed,4210
 2020-01-22,Papua New Guinea,confirmed,0
 2020-01-23,Papua New Guinea,confirmed,0
 2020-01-24,Papua New Guinea,confirmed,0
@@ -9347,6 +10025,12 @@ date,state,type,cases
 2020-04-10,Papua New Guinea,confirmed,2
 2020-04-11,Papua New Guinea,confirmed,2
 2020-04-12,Papua New Guinea,confirmed,2
+2020-04-13,Papua New Guinea,confirmed,2
+2020-04-14,Papua New Guinea,confirmed,2
+2020-04-15,Papua New Guinea,confirmed,2
+2020-04-16,Papua New Guinea,confirmed,7
+2020-04-17,Papua New Guinea,confirmed,7
+2020-04-18,Papua New Guinea,confirmed,7
 2020-01-22,Paraguay,confirmed,0
 2020-01-23,Paraguay,confirmed,0
 2020-01-24,Paraguay,confirmed,0
@@ -9429,6 +10113,12 @@ date,state,type,cases
 2020-04-10,Paraguay,confirmed,129
 2020-04-11,Paraguay,confirmed,133
 2020-04-12,Paraguay,confirmed,134
+2020-04-13,Paraguay,confirmed,147
+2020-04-14,Paraguay,confirmed,159
+2020-04-15,Paraguay,confirmed,161
+2020-04-16,Paraguay,confirmed,174
+2020-04-17,Paraguay,confirmed,199
+2020-04-18,Paraguay,confirmed,202
 2020-01-22,Peru,confirmed,0
 2020-01-23,Peru,confirmed,0
 2020-01-24,Peru,confirmed,0
@@ -9511,6 +10201,12 @@ date,state,type,cases
 2020-04-10,Peru,confirmed,5897
 2020-04-11,Peru,confirmed,6848
 2020-04-12,Peru,confirmed,7519
+2020-04-13,Peru,confirmed,9784
+2020-04-14,Peru,confirmed,10303
+2020-04-15,Peru,confirmed,11475
+2020-04-16,Peru,confirmed,12491
+2020-04-17,Peru,confirmed,13489
+2020-04-18,Peru,confirmed,14420
 2020-01-22,Philippines,confirmed,0
 2020-01-23,Philippines,confirmed,0
 2020-01-24,Philippines,confirmed,0
@@ -9593,6 +10289,12 @@ date,state,type,cases
 2020-04-10,Philippines,confirmed,4195
 2020-04-11,Philippines,confirmed,4428
 2020-04-12,Philippines,confirmed,4648
+2020-04-13,Philippines,confirmed,4932
+2020-04-14,Philippines,confirmed,5223
+2020-04-15,Philippines,confirmed,5453
+2020-04-16,Philippines,confirmed,5660
+2020-04-17,Philippines,confirmed,5878
+2020-04-18,Philippines,confirmed,6087
 2020-01-22,Poland,confirmed,0
 2020-01-23,Poland,confirmed,0
 2020-01-24,Poland,confirmed,0
@@ -9675,6 +10377,12 @@ date,state,type,cases
 2020-04-10,Poland,confirmed,5955
 2020-04-11,Poland,confirmed,6356
 2020-04-12,Poland,confirmed,6674
+2020-04-13,Poland,confirmed,6934
+2020-04-14,Poland,confirmed,7202
+2020-04-15,Poland,confirmed,7582
+2020-04-16,Poland,confirmed,7918
+2020-04-17,Poland,confirmed,8379
+2020-04-18,Poland,confirmed,8742
 2020-01-22,Portugal,confirmed,0
 2020-01-23,Portugal,confirmed,0
 2020-01-24,Portugal,confirmed,0
@@ -9757,6 +10465,12 @@ date,state,type,cases
 2020-04-10,Portugal,confirmed,15472
 2020-04-11,Portugal,confirmed,15987
 2020-04-12,Portugal,confirmed,16585
+2020-04-13,Portugal,confirmed,16934
+2020-04-14,Portugal,confirmed,17448
+2020-04-15,Portugal,confirmed,18091
+2020-04-16,Portugal,confirmed,18841
+2020-04-17,Portugal,confirmed,19022
+2020-04-18,Portugal,confirmed,19685
 2020-01-22,Qatar,confirmed,0
 2020-01-23,Qatar,confirmed,0
 2020-01-24,Qatar,confirmed,0
@@ -9839,6 +10553,12 @@ date,state,type,cases
 2020-04-10,Qatar,confirmed,2512
 2020-04-11,Qatar,confirmed,2728
 2020-04-12,Qatar,confirmed,2979
+2020-04-13,Qatar,confirmed,3231
+2020-04-14,Qatar,confirmed,3428
+2020-04-15,Qatar,confirmed,3711
+2020-04-16,Qatar,confirmed,4103
+2020-04-17,Qatar,confirmed,4663
+2020-04-18,Qatar,confirmed,5008
 2020-01-22,Romania,confirmed,0
 2020-01-23,Romania,confirmed,0
 2020-01-24,Romania,confirmed,0
@@ -9921,6 +10641,12 @@ date,state,type,cases
 2020-04-10,Romania,confirmed,5467
 2020-04-11,Romania,confirmed,5990
 2020-04-12,Romania,confirmed,6300
+2020-04-13,Romania,confirmed,6633
+2020-04-14,Romania,confirmed,6879
+2020-04-15,Romania,confirmed,7216
+2020-04-16,Romania,confirmed,7707
+2020-04-17,Romania,confirmed,8067
+2020-04-18,Romania,confirmed,8418
 2020-01-22,Russia,confirmed,0
 2020-01-23,Russia,confirmed,0
 2020-01-24,Russia,confirmed,0
@@ -10003,6 +10729,12 @@ date,state,type,cases
 2020-04-10,Russia,confirmed,11917
 2020-04-11,Russia,confirmed,13584
 2020-04-12,Russia,confirmed,15770
+2020-04-13,Russia,confirmed,18328
+2020-04-14,Russia,confirmed,21102
+2020-04-15,Russia,confirmed,24490
+2020-04-16,Russia,confirmed,27938
+2020-04-17,Russia,confirmed,32008
+2020-04-18,Russia,confirmed,36793
 2020-01-22,Rwanda,confirmed,0
 2020-01-23,Rwanda,confirmed,0
 2020-01-24,Rwanda,confirmed,0
@@ -10085,6 +10817,12 @@ date,state,type,cases
 2020-04-10,Rwanda,confirmed,118
 2020-04-11,Rwanda,confirmed,120
 2020-04-12,Rwanda,confirmed,126
+2020-04-13,Rwanda,confirmed,127
+2020-04-14,Rwanda,confirmed,134
+2020-04-15,Rwanda,confirmed,136
+2020-04-16,Rwanda,confirmed,138
+2020-04-17,Rwanda,confirmed,143
+2020-04-18,Rwanda,confirmed,144
 2020-01-22,Saint Lucia,confirmed,0
 2020-01-23,Saint Lucia,confirmed,0
 2020-01-24,Saint Lucia,confirmed,0
@@ -10167,6 +10905,12 @@ date,state,type,cases
 2020-04-10,Saint Lucia,confirmed,15
 2020-04-11,Saint Lucia,confirmed,15
 2020-04-12,Saint Lucia,confirmed,15
+2020-04-13,Saint Lucia,confirmed,15
+2020-04-14,Saint Lucia,confirmed,15
+2020-04-15,Saint Lucia,confirmed,15
+2020-04-16,Saint Lucia,confirmed,15
+2020-04-17,Saint Lucia,confirmed,15
+2020-04-18,Saint Lucia,confirmed,15
 2020-01-22,Saint Vincent and the Grenadines,confirmed,0
 2020-01-23,Saint Vincent and the Grenadines,confirmed,0
 2020-01-24,Saint Vincent and the Grenadines,confirmed,0
@@ -10249,6 +10993,12 @@ date,state,type,cases
 2020-04-10,Saint Vincent and the Grenadines,confirmed,12
 2020-04-11,Saint Vincent and the Grenadines,confirmed,12
 2020-04-12,Saint Vincent and the Grenadines,confirmed,12
+2020-04-13,Saint Vincent and the Grenadines,confirmed,12
+2020-04-14,Saint Vincent and the Grenadines,confirmed,12
+2020-04-15,Saint Vincent and the Grenadines,confirmed,12
+2020-04-16,Saint Vincent and the Grenadines,confirmed,12
+2020-04-17,Saint Vincent and the Grenadines,confirmed,12
+2020-04-18,Saint Vincent and the Grenadines,confirmed,12
 2020-01-22,San Marino,confirmed,0
 2020-01-23,San Marino,confirmed,0
 2020-01-24,San Marino,confirmed,0
@@ -10331,6 +11081,12 @@ date,state,type,cases
 2020-04-10,San Marino,confirmed,344
 2020-04-11,San Marino,confirmed,356
 2020-04-12,San Marino,confirmed,356
+2020-04-13,San Marino,confirmed,356
+2020-04-14,San Marino,confirmed,371
+2020-04-15,San Marino,confirmed,372
+2020-04-16,San Marino,confirmed,426
+2020-04-17,San Marino,confirmed,435
+2020-04-18,San Marino,confirmed,455
 2020-01-22,Saudi Arabia,confirmed,0
 2020-01-23,Saudi Arabia,confirmed,0
 2020-01-24,Saudi Arabia,confirmed,0
@@ -10413,6 +11169,12 @@ date,state,type,cases
 2020-04-10,Saudi Arabia,confirmed,3651
 2020-04-11,Saudi Arabia,confirmed,4033
 2020-04-12,Saudi Arabia,confirmed,4462
+2020-04-13,Saudi Arabia,confirmed,4934
+2020-04-14,Saudi Arabia,confirmed,5369
+2020-04-15,Saudi Arabia,confirmed,5862
+2020-04-16,Saudi Arabia,confirmed,6380
+2020-04-17,Saudi Arabia,confirmed,7142
+2020-04-18,Saudi Arabia,confirmed,8274
 2020-01-22,Senegal,confirmed,0
 2020-01-23,Senegal,confirmed,0
 2020-01-24,Senegal,confirmed,0
@@ -10495,6 +11257,12 @@ date,state,type,cases
 2020-04-10,Senegal,confirmed,265
 2020-04-11,Senegal,confirmed,278
 2020-04-12,Senegal,confirmed,280
+2020-04-13,Senegal,confirmed,291
+2020-04-14,Senegal,confirmed,299
+2020-04-15,Senegal,confirmed,314
+2020-04-16,Senegal,confirmed,335
+2020-04-17,Senegal,confirmed,342
+2020-04-18,Senegal,confirmed,350
 2020-01-22,Serbia,confirmed,0
 2020-01-23,Serbia,confirmed,0
 2020-01-24,Serbia,confirmed,0
@@ -10577,6 +11345,12 @@ date,state,type,cases
 2020-04-10,Serbia,confirmed,3105
 2020-04-11,Serbia,confirmed,3380
 2020-04-12,Serbia,confirmed,3630
+2020-04-13,Serbia,confirmed,4054
+2020-04-14,Serbia,confirmed,4465
+2020-04-15,Serbia,confirmed,4873
+2020-04-16,Serbia,confirmed,5318
+2020-04-17,Serbia,confirmed,5690
+2020-04-18,Serbia,confirmed,5994
 2020-01-22,Seychelles,confirmed,0
 2020-01-23,Seychelles,confirmed,0
 2020-01-24,Seychelles,confirmed,0
@@ -10659,6 +11433,12 @@ date,state,type,cases
 2020-04-10,Seychelles,confirmed,11
 2020-04-11,Seychelles,confirmed,11
 2020-04-12,Seychelles,confirmed,11
+2020-04-13,Seychelles,confirmed,11
+2020-04-14,Seychelles,confirmed,11
+2020-04-15,Seychelles,confirmed,11
+2020-04-16,Seychelles,confirmed,11
+2020-04-17,Seychelles,confirmed,11
+2020-04-18,Seychelles,confirmed,11
 2020-01-22,Singapore,confirmed,0
 2020-01-23,Singapore,confirmed,1
 2020-01-24,Singapore,confirmed,3
@@ -10741,6 +11521,12 @@ date,state,type,cases
 2020-04-10,Singapore,confirmed,2108
 2020-04-11,Singapore,confirmed,2299
 2020-04-12,Singapore,confirmed,2532
+2020-04-13,Singapore,confirmed,2918
+2020-04-14,Singapore,confirmed,3252
+2020-04-15,Singapore,confirmed,3699
+2020-04-16,Singapore,confirmed,4427
+2020-04-17,Singapore,confirmed,5050
+2020-04-18,Singapore,confirmed,5992
 2020-01-22,Slovakia,confirmed,0
 2020-01-23,Slovakia,confirmed,0
 2020-01-24,Slovakia,confirmed,0
@@ -10823,6 +11609,12 @@ date,state,type,cases
 2020-04-10,Slovakia,confirmed,715
 2020-04-11,Slovakia,confirmed,728
 2020-04-12,Slovakia,confirmed,742
+2020-04-13,Slovakia,confirmed,769
+2020-04-14,Slovakia,confirmed,835
+2020-04-15,Slovakia,confirmed,863
+2020-04-16,Slovakia,confirmed,977
+2020-04-17,Slovakia,confirmed,1049
+2020-04-18,Slovakia,confirmed,1089
 2020-01-22,Slovenia,confirmed,0
 2020-01-23,Slovenia,confirmed,0
 2020-01-24,Slovenia,confirmed,0
@@ -10905,6 +11697,12 @@ date,state,type,cases
 2020-04-10,Slovenia,confirmed,1160
 2020-04-11,Slovenia,confirmed,1188
 2020-04-12,Slovenia,confirmed,1205
+2020-04-13,Slovenia,confirmed,1212
+2020-04-14,Slovenia,confirmed,1220
+2020-04-15,Slovenia,confirmed,1248
+2020-04-16,Slovenia,confirmed,1268
+2020-04-17,Slovenia,confirmed,1304
+2020-04-18,Slovenia,confirmed,1317
 2020-01-22,Somalia,confirmed,0
 2020-01-23,Somalia,confirmed,0
 2020-01-24,Somalia,confirmed,0
@@ -10987,6 +11785,12 @@ date,state,type,cases
 2020-04-10,Somalia,confirmed,21
 2020-04-11,Somalia,confirmed,21
 2020-04-12,Somalia,confirmed,25
+2020-04-13,Somalia,confirmed,60
+2020-04-14,Somalia,confirmed,60
+2020-04-15,Somalia,confirmed,80
+2020-04-16,Somalia,confirmed,80
+2020-04-17,Somalia,confirmed,116
+2020-04-18,Somalia,confirmed,135
 2020-01-22,South Africa,confirmed,0
 2020-01-23,South Africa,confirmed,0
 2020-01-24,South Africa,confirmed,0
@@ -11069,6 +11873,12 @@ date,state,type,cases
 2020-04-10,South Africa,confirmed,2003
 2020-04-11,South Africa,confirmed,2028
 2020-04-12,South Africa,confirmed,2173
+2020-04-13,South Africa,confirmed,2272
+2020-04-14,South Africa,confirmed,2415
+2020-04-15,South Africa,confirmed,2506
+2020-04-16,South Africa,confirmed,2605
+2020-04-17,South Africa,confirmed,2783
+2020-04-18,South Africa,confirmed,3034
 2020-01-22,Spain,confirmed,0
 2020-01-23,Spain,confirmed,0
 2020-01-24,Spain,confirmed,0
@@ -11151,6 +11961,12 @@ date,state,type,cases
 2020-04-10,Spain,confirmed,158273
 2020-04-11,Spain,confirmed,163027
 2020-04-12,Spain,confirmed,166831
+2020-04-13,Spain,confirmed,170099
+2020-04-14,Spain,confirmed,172541
+2020-04-15,Spain,confirmed,177644
+2020-04-16,Spain,confirmed,184948
+2020-04-17,Spain,confirmed,190839
+2020-04-18,Spain,confirmed,191726
 2020-01-22,Sri Lanka,confirmed,0
 2020-01-23,Sri Lanka,confirmed,0
 2020-01-24,Sri Lanka,confirmed,0
@@ -11233,6 +12049,12 @@ date,state,type,cases
 2020-04-10,Sri Lanka,confirmed,190
 2020-04-11,Sri Lanka,confirmed,198
 2020-04-12,Sri Lanka,confirmed,210
+2020-04-13,Sri Lanka,confirmed,217
+2020-04-14,Sri Lanka,confirmed,233
+2020-04-15,Sri Lanka,confirmed,238
+2020-04-16,Sri Lanka,confirmed,238
+2020-04-17,Sri Lanka,confirmed,244
+2020-04-18,Sri Lanka,confirmed,254
 2020-01-22,Sudan,confirmed,0
 2020-01-23,Sudan,confirmed,0
 2020-01-24,Sudan,confirmed,0
@@ -11315,6 +12137,12 @@ date,state,type,cases
 2020-04-10,Sudan,confirmed,17
 2020-04-11,Sudan,confirmed,19
 2020-04-12,Sudan,confirmed,19
+2020-04-13,Sudan,confirmed,29
+2020-04-14,Sudan,confirmed,32
+2020-04-15,Sudan,confirmed,32
+2020-04-16,Sudan,confirmed,32
+2020-04-17,Sudan,confirmed,33
+2020-04-18,Sudan,confirmed,66
 2020-01-22,Suriname,confirmed,0
 2020-01-23,Suriname,confirmed,0
 2020-01-24,Suriname,confirmed,0
@@ -11397,6 +12225,12 @@ date,state,type,cases
 2020-04-10,Suriname,confirmed,10
 2020-04-11,Suriname,confirmed,10
 2020-04-12,Suriname,confirmed,10
+2020-04-13,Suriname,confirmed,10
+2020-04-14,Suriname,confirmed,10
+2020-04-15,Suriname,confirmed,10
+2020-04-16,Suriname,confirmed,10
+2020-04-17,Suriname,confirmed,10
+2020-04-18,Suriname,confirmed,10
 2020-01-22,Sweden,confirmed,0
 2020-01-23,Sweden,confirmed,0
 2020-01-24,Sweden,confirmed,0
@@ -11479,6 +12313,12 @@ date,state,type,cases
 2020-04-10,Sweden,confirmed,9685
 2020-04-11,Sweden,confirmed,10151
 2020-04-12,Sweden,confirmed,10483
+2020-04-13,Sweden,confirmed,10948
+2020-04-14,Sweden,confirmed,11445
+2020-04-15,Sweden,confirmed,11927
+2020-04-16,Sweden,confirmed,12540
+2020-04-17,Sweden,confirmed,13216
+2020-04-18,Sweden,confirmed,13822
 2020-01-22,Switzerland,confirmed,0
 2020-01-23,Switzerland,confirmed,0
 2020-01-24,Switzerland,confirmed,0
@@ -11561,6 +12401,12 @@ date,state,type,cases
 2020-04-10,Switzerland,confirmed,24551
 2020-04-11,Switzerland,confirmed,25107
 2020-04-12,Switzerland,confirmed,25415
+2020-04-13,Switzerland,confirmed,25688
+2020-04-14,Switzerland,confirmed,25936
+2020-04-15,Switzerland,confirmed,26336
+2020-04-16,Switzerland,confirmed,26732
+2020-04-17,Switzerland,confirmed,27078
+2020-04-18,Switzerland,confirmed,27404
 2020-01-22,Taiwan*,confirmed,1
 2020-01-23,Taiwan*,confirmed,1
 2020-01-24,Taiwan*,confirmed,3
@@ -11643,6 +12489,12 @@ date,state,type,cases
 2020-04-10,Taiwan*,confirmed,382
 2020-04-11,Taiwan*,confirmed,385
 2020-04-12,Taiwan*,confirmed,388
+2020-04-13,Taiwan*,confirmed,393
+2020-04-14,Taiwan*,confirmed,393
+2020-04-15,Taiwan*,confirmed,395
+2020-04-16,Taiwan*,confirmed,395
+2020-04-17,Taiwan*,confirmed,395
+2020-04-18,Taiwan*,confirmed,398
 2020-01-22,Tanzania,confirmed,0
 2020-01-23,Tanzania,confirmed,0
 2020-01-24,Tanzania,confirmed,0
@@ -11725,6 +12577,12 @@ date,state,type,cases
 2020-04-10,Tanzania,confirmed,32
 2020-04-11,Tanzania,confirmed,32
 2020-04-12,Tanzania,confirmed,32
+2020-04-13,Tanzania,confirmed,49
+2020-04-14,Tanzania,confirmed,53
+2020-04-15,Tanzania,confirmed,88
+2020-04-16,Tanzania,confirmed,94
+2020-04-17,Tanzania,confirmed,147
+2020-04-18,Tanzania,confirmed,147
 2020-01-22,Thailand,confirmed,2
 2020-01-23,Thailand,confirmed,3
 2020-01-24,Thailand,confirmed,5
@@ -11807,6 +12665,12 @@ date,state,type,cases
 2020-04-10,Thailand,confirmed,2473
 2020-04-11,Thailand,confirmed,2518
 2020-04-12,Thailand,confirmed,2551
+2020-04-13,Thailand,confirmed,2579
+2020-04-14,Thailand,confirmed,2613
+2020-04-15,Thailand,confirmed,2643
+2020-04-16,Thailand,confirmed,2672
+2020-04-17,Thailand,confirmed,2700
+2020-04-18,Thailand,confirmed,2733
 2020-01-22,Togo,confirmed,0
 2020-01-23,Togo,confirmed,0
 2020-01-24,Togo,confirmed,0
@@ -11889,6 +12753,12 @@ date,state,type,cases
 2020-04-10,Togo,confirmed,76
 2020-04-11,Togo,confirmed,76
 2020-04-12,Togo,confirmed,76
+2020-04-13,Togo,confirmed,77
+2020-04-14,Togo,confirmed,77
+2020-04-15,Togo,confirmed,81
+2020-04-16,Togo,confirmed,81
+2020-04-17,Togo,confirmed,83
+2020-04-18,Togo,confirmed,84
 2020-01-22,Trinidad and Tobago,confirmed,0
 2020-01-23,Trinidad and Tobago,confirmed,0
 2020-01-24,Trinidad and Tobago,confirmed,0
@@ -11971,6 +12841,12 @@ date,state,type,cases
 2020-04-10,Trinidad and Tobago,confirmed,109
 2020-04-11,Trinidad and Tobago,confirmed,112
 2020-04-12,Trinidad and Tobago,confirmed,113
+2020-04-13,Trinidad and Tobago,confirmed,113
+2020-04-14,Trinidad and Tobago,confirmed,113
+2020-04-15,Trinidad and Tobago,confirmed,114
+2020-04-16,Trinidad and Tobago,confirmed,114
+2020-04-17,Trinidad and Tobago,confirmed,114
+2020-04-18,Trinidad and Tobago,confirmed,114
 2020-01-22,Tunisia,confirmed,0
 2020-01-23,Tunisia,confirmed,0
 2020-01-24,Tunisia,confirmed,0
@@ -12053,6 +12929,12 @@ date,state,type,cases
 2020-04-10,Tunisia,confirmed,671
 2020-04-11,Tunisia,confirmed,685
 2020-04-12,Tunisia,confirmed,707
+2020-04-13,Tunisia,confirmed,726
+2020-04-14,Tunisia,confirmed,747
+2020-04-15,Tunisia,confirmed,780
+2020-04-16,Tunisia,confirmed,822
+2020-04-17,Tunisia,confirmed,864
+2020-04-18,Tunisia,confirmed,864
 2020-01-22,Turkey,confirmed,0
 2020-01-23,Turkey,confirmed,0
 2020-01-24,Turkey,confirmed,0
@@ -12135,6 +13017,12 @@ date,state,type,cases
 2020-04-10,Turkey,confirmed,47029
 2020-04-11,Turkey,confirmed,52167
 2020-04-12,Turkey,confirmed,56956
+2020-04-13,Turkey,confirmed,61049
+2020-04-14,Turkey,confirmed,65111
+2020-04-15,Turkey,confirmed,69392
+2020-04-16,Turkey,confirmed,74193
+2020-04-17,Turkey,confirmed,78546
+2020-04-18,Turkey,confirmed,82329
 2020-01-22,Uganda,confirmed,0
 2020-01-23,Uganda,confirmed,0
 2020-01-24,Uganda,confirmed,0
@@ -12217,6 +13105,12 @@ date,state,type,cases
 2020-04-10,Uganda,confirmed,53
 2020-04-11,Uganda,confirmed,53
 2020-04-12,Uganda,confirmed,54
+2020-04-13,Uganda,confirmed,54
+2020-04-14,Uganda,confirmed,55
+2020-04-15,Uganda,confirmed,55
+2020-04-16,Uganda,confirmed,55
+2020-04-17,Uganda,confirmed,56
+2020-04-18,Uganda,confirmed,55
 2020-01-22,Ukraine,confirmed,0
 2020-01-23,Ukraine,confirmed,0
 2020-01-24,Ukraine,confirmed,0
@@ -12299,6 +13193,12 @@ date,state,type,cases
 2020-04-10,Ukraine,confirmed,2203
 2020-04-11,Ukraine,confirmed,2511
 2020-04-12,Ukraine,confirmed,2777
+2020-04-13,Ukraine,confirmed,3102
+2020-04-14,Ukraine,confirmed,3372
+2020-04-15,Ukraine,confirmed,3764
+2020-04-16,Ukraine,confirmed,4161
+2020-04-17,Ukraine,confirmed,4662
+2020-04-18,Ukraine,confirmed,5106
 2020-01-22,United Arab Emirates,confirmed,0
 2020-01-23,United Arab Emirates,confirmed,0
 2020-01-24,United Arab Emirates,confirmed,0
@@ -12381,6 +13281,12 @@ date,state,type,cases
 2020-04-10,United Arab Emirates,confirmed,3360
 2020-04-11,United Arab Emirates,confirmed,3736
 2020-04-12,United Arab Emirates,confirmed,4123
+2020-04-13,United Arab Emirates,confirmed,4521
+2020-04-14,United Arab Emirates,confirmed,4933
+2020-04-15,United Arab Emirates,confirmed,5365
+2020-04-16,United Arab Emirates,confirmed,5825
+2020-04-17,United Arab Emirates,confirmed,6302
+2020-04-18,United Arab Emirates,confirmed,6302
 2020-01-22,United Kingdom,confirmed,0
 2020-01-23,United Kingdom,confirmed,0
 2020-01-24,United Kingdom,confirmed,0
@@ -12463,6 +13369,12 @@ date,state,type,cases
 2020-04-10,United Kingdom,confirmed,73758
 2020-04-11,United Kingdom,confirmed,78991
 2020-04-12,United Kingdom,confirmed,84279
+2020-04-13,United Kingdom,confirmed,88621
+2020-04-14,United Kingdom,confirmed,93873
+2020-04-15,United Kingdom,confirmed,98476
+2020-04-16,United Kingdom,confirmed,103093
+2020-04-17,United Kingdom,confirmed,108692
+2020-04-18,United Kingdom,confirmed,114217
 2020-01-22,Uruguay,confirmed,0
 2020-01-23,Uruguay,confirmed,0
 2020-01-24,Uruguay,confirmed,0
@@ -12545,6 +13457,12 @@ date,state,type,cases
 2020-04-10,Uruguay,confirmed,473
 2020-04-11,Uruguay,confirmed,494
 2020-04-12,Uruguay,confirmed,480
+2020-04-13,Uruguay,confirmed,480
+2020-04-14,Uruguay,confirmed,483
+2020-04-15,Uruguay,confirmed,492
+2020-04-16,Uruguay,confirmed,502
+2020-04-17,Uruguay,confirmed,502
+2020-04-18,Uruguay,confirmed,508
 2020-01-22,US,confirmed,1
 2020-01-23,US,confirmed,1
 2020-01-24,US,confirmed,2
@@ -12606,8 +13524,8 @@ date,state,type,cases
 2020-03-20,US,confirmed,19273
 2020-03-21,US,confirmed,25600
 2020-03-22,US,confirmed,33276
-2020-03-23,US,confirmed,43847
-2020-03-24,US,confirmed,53740
+2020-03-23,US,confirmed,43843
+2020-03-24,US,confirmed,53736
 2020-03-25,US,confirmed,65778
 2020-03-26,US,confirmed,83836
 2020-03-27,US,confirmed,101657
@@ -12621,12 +13539,18 @@ date,state,type,cases
 2020-04-04,US,confirmed,308853
 2020-04-05,US,confirmed,337072
 2020-04-06,US,confirmed,366667
-2020-04-07,US,confirmed,396223
+2020-04-07,US,confirmed,397505
 2020-04-08,US,confirmed,429052
-2020-04-09,US,confirmed,461437
+2020-04-09,US,confirmed,462780
 2020-04-10,US,confirmed,496535
 2020-04-11,US,confirmed,526396
 2020-04-12,US,confirmed,555313
+2020-04-13,US,confirmed,580619
+2020-04-14,US,confirmed,607670
+2020-04-15,US,confirmed,636350
+2020-04-16,US,confirmed,667801
+2020-04-17,US,confirmed,699706
+2020-04-18,US,confirmed,732197
 2020-01-22,Uzbekistan,confirmed,0
 2020-01-23,Uzbekistan,confirmed,0
 2020-01-24,Uzbekistan,confirmed,0
@@ -12709,6 +13633,12 @@ date,state,type,cases
 2020-04-10,Uzbekistan,confirmed,624
 2020-04-11,Uzbekistan,confirmed,767
 2020-04-12,Uzbekistan,confirmed,865
+2020-04-13,Uzbekistan,confirmed,998
+2020-04-14,Uzbekistan,confirmed,1165
+2020-04-15,Uzbekistan,confirmed,1302
+2020-04-16,Uzbekistan,confirmed,1349
+2020-04-17,Uzbekistan,confirmed,1405
+2020-04-18,Uzbekistan,confirmed,1490
 2020-01-22,Venezuela,confirmed,0
 2020-01-23,Venezuela,confirmed,0
 2020-01-24,Venezuela,confirmed,0
@@ -12791,6 +13721,12 @@ date,state,type,cases
 2020-04-10,Venezuela,confirmed,171
 2020-04-11,Venezuela,confirmed,175
 2020-04-12,Venezuela,confirmed,181
+2020-04-13,Venezuela,confirmed,189
+2020-04-14,Venezuela,confirmed,189
+2020-04-15,Venezuela,confirmed,197
+2020-04-16,Venezuela,confirmed,204
+2020-04-17,Venezuela,confirmed,204
+2020-04-18,Venezuela,confirmed,227
 2020-01-22,Vietnam,confirmed,0
 2020-01-23,Vietnam,confirmed,2
 2020-01-24,Vietnam,confirmed,2
@@ -12873,6 +13809,12 @@ date,state,type,cases
 2020-04-10,Vietnam,confirmed,257
 2020-04-11,Vietnam,confirmed,258
 2020-04-12,Vietnam,confirmed,262
+2020-04-13,Vietnam,confirmed,265
+2020-04-14,Vietnam,confirmed,266
+2020-04-15,Vietnam,confirmed,267
+2020-04-16,Vietnam,confirmed,268
+2020-04-17,Vietnam,confirmed,268
+2020-04-18,Vietnam,confirmed,268
 2020-01-22,Zambia,confirmed,0
 2020-01-23,Zambia,confirmed,0
 2020-01-24,Zambia,confirmed,0
@@ -12955,6 +13897,12 @@ date,state,type,cases
 2020-04-10,Zambia,confirmed,40
 2020-04-11,Zambia,confirmed,40
 2020-04-12,Zambia,confirmed,43
+2020-04-13,Zambia,confirmed,45
+2020-04-14,Zambia,confirmed,45
+2020-04-15,Zambia,confirmed,48
+2020-04-16,Zambia,confirmed,48
+2020-04-17,Zambia,confirmed,52
+2020-04-18,Zambia,confirmed,57
 2020-01-22,Zimbabwe,confirmed,0
 2020-01-23,Zimbabwe,confirmed,0
 2020-01-24,Zimbabwe,confirmed,0
@@ -13037,6 +13985,12 @@ date,state,type,cases
 2020-04-10,Zimbabwe,confirmed,13
 2020-04-11,Zimbabwe,confirmed,14
 2020-04-12,Zimbabwe,confirmed,14
+2020-04-13,Zimbabwe,confirmed,17
+2020-04-14,Zimbabwe,confirmed,17
+2020-04-15,Zimbabwe,confirmed,23
+2020-04-16,Zimbabwe,confirmed,23
+2020-04-17,Zimbabwe,confirmed,24
+2020-04-18,Zimbabwe,confirmed,25
 2020-01-22,Dominica,confirmed,0
 2020-01-23,Dominica,confirmed,0
 2020-01-24,Dominica,confirmed,0
@@ -13119,6 +14073,12 @@ date,state,type,cases
 2020-04-10,Dominica,confirmed,16
 2020-04-11,Dominica,confirmed,16
 2020-04-12,Dominica,confirmed,16
+2020-04-13,Dominica,confirmed,16
+2020-04-14,Dominica,confirmed,16
+2020-04-15,Dominica,confirmed,16
+2020-04-16,Dominica,confirmed,16
+2020-04-17,Dominica,confirmed,16
+2020-04-18,Dominica,confirmed,16
 2020-01-22,Grenada,confirmed,0
 2020-01-23,Grenada,confirmed,0
 2020-01-24,Grenada,confirmed,0
@@ -13201,6 +14161,12 @@ date,state,type,cases
 2020-04-10,Grenada,confirmed,14
 2020-04-11,Grenada,confirmed,14
 2020-04-12,Grenada,confirmed,14
+2020-04-13,Grenada,confirmed,14
+2020-04-14,Grenada,confirmed,14
+2020-04-15,Grenada,confirmed,14
+2020-04-16,Grenada,confirmed,14
+2020-04-17,Grenada,confirmed,14
+2020-04-18,Grenada,confirmed,14
 2020-01-22,Mozambique,confirmed,0
 2020-01-23,Mozambique,confirmed,0
 2020-01-24,Mozambique,confirmed,0
@@ -13283,6 +14249,12 @@ date,state,type,cases
 2020-04-10,Mozambique,confirmed,20
 2020-04-11,Mozambique,confirmed,20
 2020-04-12,Mozambique,confirmed,21
+2020-04-13,Mozambique,confirmed,21
+2020-04-14,Mozambique,confirmed,28
+2020-04-15,Mozambique,confirmed,29
+2020-04-16,Mozambique,confirmed,31
+2020-04-17,Mozambique,confirmed,34
+2020-04-18,Mozambique,confirmed,35
 2020-01-22,Syria,confirmed,0
 2020-01-23,Syria,confirmed,0
 2020-01-24,Syria,confirmed,0
@@ -13365,6 +14337,12 @@ date,state,type,cases
 2020-04-10,Syria,confirmed,19
 2020-04-11,Syria,confirmed,25
 2020-04-12,Syria,confirmed,25
+2020-04-13,Syria,confirmed,25
+2020-04-14,Syria,confirmed,29
+2020-04-15,Syria,confirmed,33
+2020-04-16,Syria,confirmed,33
+2020-04-17,Syria,confirmed,38
+2020-04-18,Syria,confirmed,38
 2020-01-22,Timor-Leste,confirmed,0
 2020-01-23,Timor-Leste,confirmed,0
 2020-01-24,Timor-Leste,confirmed,0
@@ -13447,6 +14425,12 @@ date,state,type,cases
 2020-04-10,Timor-Leste,confirmed,2
 2020-04-11,Timor-Leste,confirmed,2
 2020-04-12,Timor-Leste,confirmed,2
+2020-04-13,Timor-Leste,confirmed,4
+2020-04-14,Timor-Leste,confirmed,6
+2020-04-15,Timor-Leste,confirmed,8
+2020-04-16,Timor-Leste,confirmed,18
+2020-04-17,Timor-Leste,confirmed,18
+2020-04-18,Timor-Leste,confirmed,18
 2020-01-22,Belize,confirmed,0
 2020-01-23,Belize,confirmed,0
 2020-01-24,Belize,confirmed,0
@@ -13529,6 +14513,12 @@ date,state,type,cases
 2020-04-10,Belize,confirmed,10
 2020-04-11,Belize,confirmed,13
 2020-04-12,Belize,confirmed,14
+2020-04-13,Belize,confirmed,18
+2020-04-14,Belize,confirmed,18
+2020-04-15,Belize,confirmed,18
+2020-04-16,Belize,confirmed,18
+2020-04-17,Belize,confirmed,18
+2020-04-18,Belize,confirmed,18
 2020-01-22,Laos,confirmed,0
 2020-01-23,Laos,confirmed,0
 2020-01-24,Laos,confirmed,0
@@ -13611,6 +14601,12 @@ date,state,type,cases
 2020-04-10,Laos,confirmed,16
 2020-04-11,Laos,confirmed,18
 2020-04-12,Laos,confirmed,19
+2020-04-13,Laos,confirmed,19
+2020-04-14,Laos,confirmed,19
+2020-04-15,Laos,confirmed,19
+2020-04-16,Laos,confirmed,19
+2020-04-17,Laos,confirmed,19
+2020-04-18,Laos,confirmed,19
 2020-01-22,Libya,confirmed,0
 2020-01-23,Libya,confirmed,0
 2020-01-24,Libya,confirmed,0
@@ -13693,6 +14689,12 @@ date,state,type,cases
 2020-04-10,Libya,confirmed,24
 2020-04-11,Libya,confirmed,24
 2020-04-12,Libya,confirmed,25
+2020-04-13,Libya,confirmed,26
+2020-04-14,Libya,confirmed,35
+2020-04-15,Libya,confirmed,48
+2020-04-16,Libya,confirmed,49
+2020-04-17,Libya,confirmed,49
+2020-04-18,Libya,confirmed,49
 2020-01-22,West Bank and Gaza,confirmed,0
 2020-01-23,West Bank and Gaza,confirmed,0
 2020-01-24,West Bank and Gaza,confirmed,0
@@ -13775,6 +14777,12 @@ date,state,type,cases
 2020-04-10,West Bank and Gaza,confirmed,267
 2020-04-11,West Bank and Gaza,confirmed,268
 2020-04-12,West Bank and Gaza,confirmed,290
+2020-04-13,West Bank and Gaza,confirmed,308
+2020-04-14,West Bank and Gaza,confirmed,308
+2020-04-15,West Bank and Gaza,confirmed,374
+2020-04-16,West Bank and Gaza,confirmed,374
+2020-04-17,West Bank and Gaza,confirmed,402
+2020-04-18,West Bank and Gaza,confirmed,418
 2020-01-22,Guinea-Bissau,confirmed,0
 2020-01-23,Guinea-Bissau,confirmed,0
 2020-01-24,Guinea-Bissau,confirmed,0
@@ -13857,6 +14865,12 @@ date,state,type,cases
 2020-04-10,Guinea-Bissau,confirmed,36
 2020-04-11,Guinea-Bissau,confirmed,38
 2020-04-12,Guinea-Bissau,confirmed,38
+2020-04-13,Guinea-Bissau,confirmed,38
+2020-04-14,Guinea-Bissau,confirmed,38
+2020-04-15,Guinea-Bissau,confirmed,43
+2020-04-16,Guinea-Bissau,confirmed,43
+2020-04-17,Guinea-Bissau,confirmed,43
+2020-04-18,Guinea-Bissau,confirmed,46
 2020-01-22,Mali,confirmed,0
 2020-01-23,Mali,confirmed,0
 2020-01-24,Mali,confirmed,0
@@ -13939,6 +14953,12 @@ date,state,type,cases
 2020-04-10,Mali,confirmed,87
 2020-04-11,Mali,confirmed,87
 2020-04-12,Mali,confirmed,105
+2020-04-13,Mali,confirmed,123
+2020-04-14,Mali,confirmed,144
+2020-04-15,Mali,confirmed,148
+2020-04-16,Mali,confirmed,171
+2020-04-17,Mali,confirmed,171
+2020-04-18,Mali,confirmed,216
 2020-01-22,Saint Kitts and Nevis,confirmed,0
 2020-01-23,Saint Kitts and Nevis,confirmed,0
 2020-01-24,Saint Kitts and Nevis,confirmed,0
@@ -14021,6 +15041,12 @@ date,state,type,cases
 2020-04-10,Saint Kitts and Nevis,confirmed,12
 2020-04-11,Saint Kitts and Nevis,confirmed,12
 2020-04-12,Saint Kitts and Nevis,confirmed,12
+2020-04-13,Saint Kitts and Nevis,confirmed,12
+2020-04-14,Saint Kitts and Nevis,confirmed,14
+2020-04-15,Saint Kitts and Nevis,confirmed,14
+2020-04-16,Saint Kitts and Nevis,confirmed,14
+2020-04-17,Saint Kitts and Nevis,confirmed,14
+2020-04-18,Saint Kitts and Nevis,confirmed,14
 2020-01-22,Kosovo,confirmed,0
 2020-01-23,Kosovo,confirmed,0
 2020-01-24,Kosovo,confirmed,0
@@ -14103,6 +15129,12 @@ date,state,type,cases
 2020-04-10,Kosovo,confirmed,250
 2020-04-11,Kosovo,confirmed,283
 2020-04-12,Kosovo,confirmed,283
+2020-04-13,Kosovo,confirmed,283
+2020-04-14,Kosovo,confirmed,387
+2020-04-15,Kosovo,confirmed,387
+2020-04-16,Kosovo,confirmed,449
+2020-04-17,Kosovo,confirmed,480
+2020-04-18,Kosovo,confirmed,510
 2020-01-22,Burma,confirmed,0
 2020-01-23,Burma,confirmed,0
 2020-01-24,Burma,confirmed,0
@@ -14185,6 +15217,12 @@ date,state,type,cases
 2020-04-10,Burma,confirmed,27
 2020-04-11,Burma,confirmed,38
 2020-04-12,Burma,confirmed,41
+2020-04-13,Burma,confirmed,62
+2020-04-14,Burma,confirmed,63
+2020-04-15,Burma,confirmed,74
+2020-04-16,Burma,confirmed,85
+2020-04-17,Burma,confirmed,88
+2020-04-18,Burma,confirmed,98
 2020-01-22,MS Zaandam,confirmed,0
 2020-01-23,MS Zaandam,confirmed,0
 2020-01-24,MS Zaandam,confirmed,0
@@ -14267,6 +15305,12 @@ date,state,type,cases
 2020-04-10,MS Zaandam,confirmed,9
 2020-04-11,MS Zaandam,confirmed,9
 2020-04-12,MS Zaandam,confirmed,9
+2020-04-13,MS Zaandam,confirmed,9
+2020-04-14,MS Zaandam,confirmed,9
+2020-04-15,MS Zaandam,confirmed,9
+2020-04-16,MS Zaandam,confirmed,9
+2020-04-17,MS Zaandam,confirmed,9
+2020-04-18,MS Zaandam,confirmed,9
 2020-01-22,Botswana,confirmed,0
 2020-01-23,Botswana,confirmed,0
 2020-01-24,Botswana,confirmed,0
@@ -14349,6 +15393,12 @@ date,state,type,cases
 2020-04-10,Botswana,confirmed,13
 2020-04-11,Botswana,confirmed,13
 2020-04-12,Botswana,confirmed,13
+2020-04-13,Botswana,confirmed,13
+2020-04-14,Botswana,confirmed,13
+2020-04-15,Botswana,confirmed,13
+2020-04-16,Botswana,confirmed,15
+2020-04-17,Botswana,confirmed,15
+2020-04-18,Botswana,confirmed,15
 2020-01-22,Burundi,confirmed,0
 2020-01-23,Burundi,confirmed,0
 2020-01-24,Burundi,confirmed,0
@@ -14431,6 +15481,12 @@ date,state,type,cases
 2020-04-10,Burundi,confirmed,3
 2020-04-11,Burundi,confirmed,5
 2020-04-12,Burundi,confirmed,5
+2020-04-13,Burundi,confirmed,5
+2020-04-14,Burundi,confirmed,5
+2020-04-15,Burundi,confirmed,5
+2020-04-16,Burundi,confirmed,5
+2020-04-17,Burundi,confirmed,5
+2020-04-18,Burundi,confirmed,5
 2020-01-22,Sierra Leone,confirmed,0
 2020-01-23,Sierra Leone,confirmed,0
 2020-01-24,Sierra Leone,confirmed,0
@@ -14513,6 +15569,12 @@ date,state,type,cases
 2020-04-10,Sierra Leone,confirmed,8
 2020-04-11,Sierra Leone,confirmed,8
 2020-04-12,Sierra Leone,confirmed,10
+2020-04-13,Sierra Leone,confirmed,10
+2020-04-14,Sierra Leone,confirmed,11
+2020-04-15,Sierra Leone,confirmed,13
+2020-04-16,Sierra Leone,confirmed,15
+2020-04-17,Sierra Leone,confirmed,26
+2020-04-18,Sierra Leone,confirmed,30
 2020-01-22,Malawi,confirmed,0
 2020-01-23,Malawi,confirmed,0
 2020-01-24,Malawi,confirmed,0
@@ -14595,6 +15657,12 @@ date,state,type,cases
 2020-04-10,Malawi,confirmed,9
 2020-04-11,Malawi,confirmed,12
 2020-04-12,Malawi,confirmed,13
+2020-04-13,Malawi,confirmed,16
+2020-04-14,Malawi,confirmed,16
+2020-04-15,Malawi,confirmed,16
+2020-04-16,Malawi,confirmed,16
+2020-04-17,Malawi,confirmed,17
+2020-04-18,Malawi,confirmed,17
 2020-01-22,South Sudan,confirmed,0
 2020-01-23,South Sudan,confirmed,0
 2020-01-24,South Sudan,confirmed,0
@@ -14677,6 +15745,12 @@ date,state,type,cases
 2020-04-10,South Sudan,confirmed,4
 2020-04-11,South Sudan,confirmed,4
 2020-04-12,South Sudan,confirmed,4
+2020-04-13,South Sudan,confirmed,4
+2020-04-14,South Sudan,confirmed,4
+2020-04-15,South Sudan,confirmed,4
+2020-04-16,South Sudan,confirmed,4
+2020-04-17,South Sudan,confirmed,4
+2020-04-18,South Sudan,confirmed,4
 2020-01-22,Western Sahara,confirmed,0
 2020-01-23,Western Sahara,confirmed,0
 2020-01-24,Western Sahara,confirmed,0
@@ -14759,6 +15833,12 @@ date,state,type,cases
 2020-04-10,Western Sahara,confirmed,4
 2020-04-11,Western Sahara,confirmed,4
 2020-04-12,Western Sahara,confirmed,6
+2020-04-13,Western Sahara,confirmed,6
+2020-04-14,Western Sahara,confirmed,6
+2020-04-15,Western Sahara,confirmed,6
+2020-04-16,Western Sahara,confirmed,6
+2020-04-17,Western Sahara,confirmed,6
+2020-04-18,Western Sahara,confirmed,6
 2020-01-22,Sao Tome and Principe,confirmed,0
 2020-01-23,Sao Tome and Principe,confirmed,0
 2020-01-24,Sao Tome and Principe,confirmed,0
@@ -14841,6 +15921,12 @@ date,state,type,cases
 2020-04-10,Sao Tome and Principe,confirmed,4
 2020-04-11,Sao Tome and Principe,confirmed,4
 2020-04-12,Sao Tome and Principe,confirmed,4
+2020-04-13,Sao Tome and Principe,confirmed,4
+2020-04-14,Sao Tome and Principe,confirmed,4
+2020-04-15,Sao Tome and Principe,confirmed,4
+2020-04-16,Sao Tome and Principe,confirmed,4
+2020-04-17,Sao Tome and Principe,confirmed,4
+2020-04-18,Sao Tome and Principe,confirmed,4
 2020-01-22,Yemen,confirmed,0
 2020-01-23,Yemen,confirmed,0
 2020-01-24,Yemen,confirmed,0
@@ -14923,6 +16009,12 @@ date,state,type,cases
 2020-04-10,Yemen,confirmed,1
 2020-04-11,Yemen,confirmed,1
 2020-04-12,Yemen,confirmed,1
+2020-04-13,Yemen,confirmed,1
+2020-04-14,Yemen,confirmed,1
+2020-04-15,Yemen,confirmed,1
+2020-04-16,Yemen,confirmed,1
+2020-04-17,Yemen,confirmed,1
+2020-04-18,Yemen,confirmed,1
 2020-01-22,Australia (total),confirmed,0
 2020-01-23,Australia (total),confirmed,0
 2020-01-24,Australia (total),confirmed,0
@@ -15005,6 +16097,12 @@ date,state,type,cases
 2020-04-10,Australia (total),confirmed,6215
 2020-04-11,Australia (total),confirmed,6303
 2020-04-12,Australia (total),confirmed,6315
+2020-04-13,Australia (total),confirmed,6351
+2020-04-14,Australia (total),confirmed,6415
+2020-04-15,Australia (total),confirmed,6440
+2020-04-16,Australia (total),confirmed,6462
+2020-04-17,Australia (total),confirmed,6522
+2020-04-18,Australia (total),confirmed,6547
 2020-01-22,Canada (total),confirmed,0
 2020-01-23,Canada (total),confirmed,0
 2020-01-24,Canada (total),confirmed,0
@@ -15087,6 +16185,12 @@ date,state,type,cases
 2020-04-10,Canada (total),confirmed,22059
 2020-04-11,Canada (total),confirmed,23316
 2020-04-12,Canada (total),confirmed,24298
+2020-04-13,Canada (total),confirmed,25679
+2020-04-14,Canada (total),confirmed,27034
+2020-04-15,Canada (total),confirmed,28208
+2020-04-16,Canada (total),confirmed,30808
+2020-04-17,Canada (total),confirmed,32813
+2020-04-18,Canada (total),confirmed,34355
 2020-01-22,China (total),confirmed,548
 2020-01-23,China (total),confirmed,643
 2020-01-24,China (total),confirmed,920
@@ -15169,6 +16273,12 @@ date,state,type,cases
 2020-04-10,China (total),confirmed,82941
 2020-04-11,China (total),confirmed,83014
 2020-04-12,China (total),confirmed,83134
+2020-04-13,China (total),confirmed,83213
+2020-04-14,China (total),confirmed,83306
+2020-04-15,China (total),confirmed,83356
+2020-04-16,China (total),confirmed,83403
+2020-04-17,China (total),confirmed,83760
+2020-04-18,China (total),confirmed,83787
 2020-01-22,Denmark (total),confirmed,0
 2020-01-23,Denmark (total),confirmed,0
 2020-01-24,Denmark (total),confirmed,0
@@ -15251,6 +16361,12 @@ date,state,type,cases
 2020-04-10,Denmark (total),confirmed,195
 2020-04-11,Denmark (total),confirmed,195
 2020-04-12,Denmark (total),confirmed,195
+2020-04-13,Denmark (total),confirmed,195
+2020-04-14,Denmark (total),confirmed,195
+2020-04-15,Denmark (total),confirmed,195
+2020-04-16,Denmark (total),confirmed,195
+2020-04-17,Denmark (total),confirmed,195
+2020-04-18,Denmark (total),confirmed,195
 2020-01-22,France (total),confirmed,0
 2020-01-23,France (total),confirmed,0
 2020-01-24,France (total),confirmed,0
@@ -15333,6 +16449,12 @@ date,state,type,cases
 2020-04-10,France (total),confirmed,1062
 2020-04-11,France (total),confirmed,1073
 2020-04-12,France (total),confirmed,1079
+2020-04-13,France (total),confirmed,1096
+2020-04-14,France (total),confirmed,1108
+2020-04-15,France (total),confirmed,1112
+2020-04-16,France (total),confirmed,1131
+2020-04-17,France (total),confirmed,1161
+2020-04-18,France (total),confirmed,1180
 2020-01-22,Netherlands (total),confirmed,0
 2020-01-23,Netherlands (total),confirmed,0
 2020-01-24,Netherlands (total),confirmed,0
@@ -15415,6 +16537,12 @@ date,state,type,cases
 2020-04-10,Netherlands (total),confirmed,152
 2020-04-11,Netherlands (total),confirmed,158
 2020-04-12,Netherlands (total),confirmed,159
+2020-04-13,Netherlands (total),confirmed,159
+2020-04-14,Netherlands (total),confirmed,161
+2020-04-15,Netherlands (total),confirmed,163
+2020-04-16,Netherlands (total),confirmed,169
+2020-04-17,Netherlands (total),confirmed,170
+2020-04-18,Netherlands (total),confirmed,177
 2020-01-22,United Kingdom (total),confirmed,0
 2020-01-23,United Kingdom (total),confirmed,0
 2020-01-24,United Kingdom (total),confirmed,0
@@ -15497,3 +16625,9 @@ date,state,type,cases
 2020-04-10,United Kingdom (total),confirmed,847
 2020-04-11,United Kingdom (total),confirmed,883
 2020-04-12,United Kingdom (total),confirmed,927
+2020-04-13,United Kingdom (total),confirmed,949
+2020-04-14,United Kingdom (total),confirmed,972
+2020-04-15,United Kingdom (total),confirmed,1007
+2020-04-16,United Kingdom (total),confirmed,1052
+2020-04-17,United Kingdom (total),confirmed,1077
+2020-04-18,United Kingdom (total),confirmed,1097

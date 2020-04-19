@@ -1,4 +1,3 @@
-# %%
 # To add a new cell, type '# %%'
 # To add a new markdown cell, type '# %% [markdown]'
 # %%
@@ -6,17 +5,21 @@ from IPython import get_ipython
 
 # %% [markdown]
 # # Estimating COVID-19's $R_t$ in Real-Time
-# Kevin Systrom - April 12
+# Kevin Systrom - April 17
 # 
 # In any epidemic, $R_t$ is the measure known as the effective reproduction number. It's the number of people who become infected per infectious person at time $t$. The most well-known version of this number is the basic reproduction number: $R_0$ when $t=0$. However, $R_0$ is a single measure that does not adapt with changes in behavior and restrictions.
 # 
-# As a pandemic evolves, increasing restrictions (or potential releasing of restrictions) change $R_t$. Knowing the current $R_t$ is essential. When $R>1$, the pandemic will spread through the entire population. If $R_t<1$, the pandemic will grow to some fixed number less than the population. The lower $R_t$, the more manageable the situation. The value of $R_t$ helps us (1) understand how effective our measures have been controlling an outbreak and (2) gives us vital information about whether we should increase or reduce restrictions based on our competing goals of economic prosperity and human safety. [Well-respected epidemiologists argue](https://www.nytimes.com/2020/04/06/opinion/coronavirus-end-social-distancing.html) that tracking $R_t$ is the only way to manage through this crisis.
+# As a pandemic evolves, increasing restrictions (or potential releasing of restrictions) changes $R_t$. Knowing the current $R_t$ is essential. When $R\gg1$, the pandemic will spread through a large part of the population. If $R_t<1$, the pandemic will slow quickly before it has a chance to infect many people. The lower the $R_t$: the more manageable the situation. In general, any $R_t<1$ means things are under control.
 # 
-# Yet, today, to my knowledge there is no real-time tracking of $R_t$ in United States. In fact, the only real-time measure I've seen has been for [Hong Kong](https://covid19.sph.hku.hk/dashboard). More importantly, it is not useful to understand $R_t$ at a national level. Instead, to manage this crisis effectively, we need a local (state, county and/or city) level granularity of $R_t$.
+# The value of $R_t$ helps us in two ways. (1) It helps us understand how effective our measures have been controlling an outbreak and (2) it gives us vital information about whether we should increase or reduce restrictions based on our competing goals of economic prosperity and human safety. [Well-respected epidemiologists argue](https://www.nytimes.com/2020/04/06/opinion/coronavirus-end-social-distancing.html) that tracking $R_t$ is the only way to manage through this crisis.
 # 
-# What follows is a solution to this problem at the US State level. It's a modified version of a solution created by [Bettencourt & Ribeiro 2008](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0002185) to estimate real-time $R_t$ using a Bayesian approach. While I have stayed true to most of their process, my solution differs in an important way that I will call out clearly.
+# Yet, today, we don't yet use $R_t$ in this way. In fact, the only real-time measure I've seen has been for [Hong Kong](https://covid19.sph.hku.hk/dashboard). More importantly, it is not useful to understand $R_t$ at a national level. Instead, to manage this crisis effectively, we need a local (state, county and/or city) granularity of $R_t$.
 # 
-# If you have questions, comments, or improvments feel free to get in touch: [hello@systrom.com](mailto:hello@systrom.com). And if it's not entirely clear, I'm not an epidemiologist. At the same time, data is data, and statistics are statistics and this is based on work by well-known epidemiologists so calibrate accordingly. In the meantime, I hope you can learn something new as I did by reading through this example. Feel free to take this work and apply it elsewhere – internationally or to counties in the United States.
+# What follows is a solution to this problem at the US State level. It's a modified version of a solution created by [Bettencourt & Ribeiro 2008](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0002185) to estimate real-time $R_t$ using a Bayesian approach. While this paper estimates a static $R$ value, here we introduce a process model with Gaussian noise to estimate a time-varying $R_t$.
+# 
+# If you have questions, comments, or improvments feel free to get in touch: [hello@systrom.com](mailto:hello@systrom.com). And if it's not entirely clear, I'm not an epidemiologist. At the same time, data is data, and statistics are statistics and this is based on work by well-known epidemiologists so you can calibrate your beliefs as you wish. In the meantime, I hope you can learn something new as I did by reading through this example. Feel free to take this work and apply it elsewhere – internationally or to counties in the United States.
+# 
+# Additionally, a huge thanks to [Frank Dellaert](http://www.twitter.com/fdellaert/) who suggested the addition of the Gaussian process and to [Adam Lerer](http://www.twitter.com/adamlerer/) who implemented the changes. Not only did I learn something new, it made the model much more responsive.
 
 # %%
 import pandas as pd
@@ -41,6 +44,8 @@ FILTERED_REGIONS = [
     'Northern Mariana Islands',
     'Guam',
     'Puerto Rico']
+
+FILTERED_REGION_CODES = ['AS', 'GU', 'PR', 'VI', 'MP']
 """
 
 FILTERED_COUNTRIES = [
@@ -64,6 +69,7 @@ FILTERED_COUNTRIES = [
     'Montenegro',
     'Moldova',
     'Norway',
+    'Portugal',
     'Russia',
     'Serbia',
     'Slovakia',
@@ -73,7 +79,6 @@ FILTERED_COUNTRIES = [
     'Switzerland',
     'United Kingdom'
 ]
-
 
 get_ipython().run_line_magic('config', "InlineBackend.figure_format = 'retina'")
 
@@ -86,43 +91,27 @@ get_ipython().run_line_magic('config', "InlineBackend.figure_format = 'retina'")
 # 
 # This is Bayes' Theorem as we'll use it:
 # 
-# $$ P(R_t|k)=\frac{P(R_t)\cdot\mathcal{L}(R_t|k)}{P(k)} $$
+# $$ P(R_t|k)=\frac{P(k|R_t)\cdot P(R_t)}{P(k)} $$
 # 
 # This says that, having seen $k$ new cases, we believe the distribution of $R_t$ is equal to:
 # 
+# - The __likelihood__ of seeing $k$ new cases given $R_t$ times ...
 # - The __prior__ beliefs of the value of $P(R_t)$ without the data ...
-# - times the __likelihood__ of $R_t$ given that we've seen $k$ new cases ...
 # - divided by the probability of seeing this many cases in general.
 # 
-# Importantly, $P(k)$ is a constant, so the numerator is proportional to the posterior. Since all probability distributions sum to 1.0, we can ignore $P(k)$ and normalize our posterior to sum to 1.0:
+# This is for a single day. To make it iterative: every day that passes, we use yesterday's prior $P(R_{t-1})$ to estimate today's prior $P(R_t)$. We will assume the distribution of $R_t$ to be a Gaussian centered around $R_{t-1}$, so $P(R_t|R_{t-1})=\mathcal{N}(R_{t-1}, \sigma)$, where $\sigma$ is a hyperparameter (see below on how we estimate $\sigma$). So on day one:
 # 
-# $$ P(R_t|k) \propto P(R_t) \cdot \mathcal{L}(R_t|k) $$
+# $$ P(R_1|k_1) \propto P(R_1)\cdot \mathcal{L}(R_1|k_1)$$
 # 
-# This is for a single day. To make it iterative: every day that passes, we use yesterday's conclusion (ie. posterior) $P(R_{t-1}|k_{t-1})$ to be today's prior $P(R_t)$ so on day two:
+# On day two:
 # 
-# $$ P(R_2|k) \propto P(R_0)\cdot\mathcal{L}(R_2|k_2)\cdot\mathcal{L}(R_1|k_1) $$
+# $$ P(R_2|k_1,k_2) \propto P(R_2)\cdot \mathcal{L}(R_2|k_2) = \sum_{R_1} {P(R_1|k_1)\cdot P(R_2|R_1)\cdot\mathcal{L}(R_2|k_2) }$$
 # 
-# And more generally:
+# etc.
 # 
-# $$ P(R_t|k_t) \propto P(R_0) \cdot {\displaystyle \prod^{T}_{t=0}}\mathcal{L}(R_t|k_t) $$
+# ### Choosing a Likelihood Function $P\left(k_t|R_t\right)$
 # 
-# With a uniform prior $P(R_0)$, this reduces to:
-# 
-# $$ P(R_t|k_t) \propto {\displaystyle \prod^{T}_{t=0}}\mathcal{L}\left(R_t|k_t\right) $$
-# %% [markdown]
-# ### My Proposed Modification
-# 
-# This works fine, but it suffers from an issue: the posterior on any given day is equally influenced by the distant past as much as the recent day. For epidemics that have $R_t>1$ for a long time and then become under control ($R_t<1$), the posterior gets stuck. It cannot forget about the many days where $R_t>1$ so eventually $P(R_t|k)$ asymptotically approaches 1 when we know it's well under 1. The authors note this in the paper as a footnote. Unfortunately this won't work for us. __The most critical thing to know is when we've dipped below the 1.0 threshold!__
-# 
-# So, I propose to only incorporate the last $m$ days of the likelihood function. By doing this, the algorithm's prior is built based on the recent past which is a much more useful prior than the entire history of the epidemic. So this simple, but important change leads to the following:
-# 
-# $$ P(R_t|k_t) \propto {\displaystyle \prod^{T}_{t=T-m}}\mathcal{L}\left(R_t|k_t\right) $$
-# 
-# While this takes the last $m$ priors into account equally, you can decide to apply a windowing function (such as an exponential) to favor recent priors over more distant.
-# %% [markdown]
-# ### Choosing a Likelihood Function $\mathcal{L}\left(R_t|k_t\right)$
-# 
-# A likelihood function function says how likely a value of $R_t$ is given an observed number of new cases $k$.
+# A likelihood function function says how likely we are to see $k$ new cases, given a value of $R_t$.
 # 
 # Any time you need to model 'arrivals' over some time period of time, statisticians like to use the [Poisson Distribution](https://en.wikipedia.org/wiki/Poisson_distribution). Given an average arrival rate of $\lambda$ new cases per day, the probability of seeing $k$ new cases is distributed according to the Poisson distribution:
 # 
@@ -172,12 +161,12 @@ likelihood = pd.Series(data=sps.poisson.pmf(k, lam),
                        index=pd.Index(lam, name='$\lambda$'),
                        name='lambda')
 
-likelihood.plot(title=r'Likelihood $L\left(\lambda|k_t\right)$');
+likelihood.plot(title=r'Likelihood $P\left(k_t=20|\lambda\right)$');
 
 # %% [markdown]
 # This says that if we see 20 cases, the most likely value of $\lambda$ is (not surprisingly) 20. But we're not certain: it's possible lambda was 21 or 17 and saw 20 new cases by chance alone. It also says that it's unlikely $\lambda$ was 40 and we saw 20.
 # 
-# Great. We have $\mathcal{L}\left(\lambda_t|k_t\right)$ which is parameterized by $\lambda$ but we were looking for $\mathcal{L}\left(R_t|k_t\right)$ which is parameterized by $R_t$. We need to know the relationship between $\lambda$ and $R_t$
+# Great. We have $P\left(\lambda_t|k_t\right)$ which is parameterized by $\lambda$ but we were looking for $P\left(k_t|R_t\right)$ which is parameterized by $R_t$. We need to know the relationship between $\lambda$ and $R_t$
 # %% [markdown]
 # ### Connecting $\lambda$ and $R_t$
 # 
@@ -185,15 +174,15 @@ likelihood.plot(title=r'Likelihood $L\left(\lambda|k_t\right)$');
 # 
 # $$ \lambda = k_{t-1}e^{\gamma(R_t-1)}$$
 # 
-# where $\gamma$ is the reciprocal of the serial interval ([about 4 days for COVID19](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)). Since we know every new case count on the previous day, we can now reformulate the likelihood function as a Poisson parameterized by fixing $k$ and varying $R_t$.
+# where $\gamma$ is the reciprocal of the serial interval ([about 7 days for COVID19](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)). Since we know every new case count on the previous day, we can now reformulate the likelihood function as a Poisson parameterized by fixing $k$ and varying $R_t$.
 # 
 # $$ \lambda = k_{t-1}e^{\gamma(R_t-1)}$$
 # 
-# $$\mathcal{L}\left(R_t|k\right) = \frac{\lambda^k e^{-\lambda}}{k!}$$
+# $$P\left(k|R_t\right) = \frac{\lambda^k e^{-\lambda}}{k!}$$
 # 
 # ### Evaluating the Likelihood Function
 # 
-# To contiue our example, let's imagine a sample of new case counts $k$. What is the likelihood of different values of $R_t$ on each of those days?
+# To continue our example, let's imagine a sample of new case counts $k$. What is the likelihood of different values of $R_t$ on each of those days?
 
 # %%
 k = np.array([20, 40, 55, 90])
@@ -203,8 +192,9 @@ R_T_MAX = 12
 r_t_range = np.linspace(0, R_T_MAX, R_T_MAX*100+1)
 
 # Gamma is 1/serial interval
-# https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article
-GAMMA = 1/4
+# https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article
+# https://www.nejm.org/doi/full/10.1056/NEJMoa2001316
+GAMMA = 1/7
 
 # Map Rt into lambda so we can substitute it into the equation below
 # Note that we have N-1 lambdas because on the first day of an outbreak
@@ -213,7 +203,7 @@ lam = k[:-1] * np.exp(GAMMA * (r_t_range[:, None] - 1))
 
 # Evaluate the likelihood on each day and normalize sum of each day to 1.0
 likelihood_r_t = sps.poisson.pmf(k[1:], lam)
-likelihood_r_t / np.sum(likelihood_r_t, axis=0)
+likelihood_r_t /= np.sum(likelihood_r_t, axis=0)
 
 # Plot it
 ax = pd.DataFrame(
@@ -221,7 +211,7 @@ ax = pd.DataFrame(
     index = r_t_range
 ).plot(
     title='Likelihood of $R_t$ given $k$',
-    xlim=(0,7)
+    xlim=(0,10)
 )
 
 ax.legend(labels=k[1:], title='New Cases')
@@ -232,7 +222,7 @@ ax.set_xlabel('$R_t$');
 # 
 # ### Performing the Bayesian Update
 # 
-# To perform the Bayesian update, we need to multiply the likelihood by the prior (which is just the previous day's likelihood) to get the posteriors. Let's do that using the cumulative product of each successive day:
+# To perform the Bayesian update, we need to multiply the likelihood by the prior (which is just the previous day's likelihood without our Gaussian update) to get the posteriors. Let's do that using the cumulative product of each successive day:
 
 # %%
 posteriors = likelihood_r_t.cumprod(axis=1)
@@ -246,7 +236,7 @@ posteriors = pd.DataFrame(
 
 ax = posteriors.plot(
     title='Posterior $P(R_t|k)$',
-    xlim=(0,7)
+    xlim=(0,10)
 )
 ax.legend(title='Day')
 ax.set_xlabel('$R_t$');
@@ -258,33 +248,35 @@ ax.set_xlabel('$R_t$');
 
 # %%
 most_likely_values = posteriors.idxmax(axis=0)
+most_likely_values
 
 # %% [markdown]
 # We can also obtain the [highest density intervals](https://www.sciencedirect.com/topics/mathematics/highest-density-interval) for $R_t$:
-# 
-# > Note: I apologize in advance for the clunky brute force HDI algorithm. Please let me know if there are better ones out there.
 
 # %%
-def highest_density_interval(pmf, p=.95):
-    
+def highest_density_interval(pmf, p=.9):
     # If we pass a DataFrame, just call this recursively on the columns
     if(isinstance(pmf, pd.DataFrame)):
-        return pd.DataFrame([highest_density_interval(pmf[col]) for col in pmf],
+        return pd.DataFrame([highest_density_interval(pmf[col], p=p) for col in pmf],
                             index=pmf.columns)
     
     cumsum = np.cumsum(pmf.values)
     best = None
     for i, value in enumerate(cumsum):
         for j, high_value in enumerate(cumsum[i+1:]):
-            if (high_value-value > p) and (not best or j<best[1]-best[0]):
+            if (high_value-value > p) and (not best or j < best[1]-best[0]):
                 best = (i, i+j+1)
                 break
-            
+
+    if best == None:
+        return pd.Series()
+
     low = pmf.index[best[0]]
     high = pmf.index[best[1]]
-    return pd.Series([low, high], index=['Low', 'High'])
+    return pd.Series([low, high], index=[f'Low_{p*100:.0f}', f'High_{p*100:.0f}'])
 
-hdi = highest_density_interval(posteriors, p=.95)
+hdi = highest_density_interval(posteriors)
+hdi.tail()
 
 # %% [markdown]
 # Finally, we can plot both the most likely values for $R_t$ and the HDIs over time. This is the most useful representation as it shows how our beliefs change with every day.
@@ -297,8 +289,8 @@ ax = most_likely_values.plot(marker='o',
                              markersize=4)
 
 ax.fill_between(hdi.index,
-                hdi['Low'],
-                hdi['High'],
+                hdi['Low_90'],
+                hdi['High_90'],
                 color='k',
                 alpha=.1,
                 lw=0,
@@ -307,48 +299,48 @@ ax.fill_between(hdi.index,
 ax.legend();
 
 # %% [markdown]
-# We can see that the most likely value of $R_t$ changes with time and the highest-density interval narrows as we become more sure of the true value of $R_t$ over time. Note that since we only had four days of history, I did not apply my windowing modification to this sample. Next, however, we'll turn to a real-world application where this modification is necessary.
+# We can see that the most likely value of $R_t$ changes with time and the highest-density interval narrows as we become more sure of the true value of $R_t$ over time. Note that since we only had four days of history, I did not apply the Gaussian process to this sample. Next, however, we'll turn to a real-world application where this process is necessary.
 # %% [markdown]
 # # Real-World Application to US Data
 # 
 # ### Setup
 # 
-# Load US state case data from the NYT archive
+# Load US state case data from CovidTracking.com
 
 # %%
-# url = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv'
+url = 'https://covidtracking.com/api/v1/states/daily.csv'
 url = 'jhu.csv'
-
+"""
+states = pd.read_csv(url,
+                     usecols=['date', 'state', 'positive'],
+                     parse_dates=['date'],
+                     index_col=['state', 'date'],
+                     squeeze=True).sort_index()
+"""
 states = pd.read_csv(url,
                      usecols=[0,1,3],
                      index_col=['state', 'date'],
                      parse_dates=['date'],
                      squeeze=True).sort_index()
-
-
-
 # %% [markdown]
 # Taking a look at the state, we need to start the analysis when there are a consistent number of cases each day. Find the last zero new case day and start on the day after that.
 # 
 # Also, case reporting is very erratic based on testing backlogs, etc. To get the best view of the 'true' data we can, I've applied a gaussian filter to the time series. This is obviously an arbitrary choice, but you'd imagine the real world process is not nearly as stochastic as the actual reporting.
 
 # %%
-state_name = 'Germany'
+# state_name = 'NY'
+state_name = 'France'
 
 def prepare_cases(cases):
     new_cases = cases.diff()
 
-    smoothed = new_cases.rolling(7,
+    smoothed = new_cases.rolling(9,
         win_type='gaussian',
         min_periods=1,
-        center=True).mean(std=2).round()
+        center=True).mean(std=3).round()
     
-    zeros = smoothed.index[smoothed.eq(0)]
-    if len(zeros) == 0:
-        idx_start = 0
-    else:
-        last_zero = zeros.max()
-        idx_start = smoothed.index.get_loc(last_zero) + 1
+    idx_start = np.searchsorted(smoothed, 10)
+    
     smoothed = smoothed.iloc[idx_start:]
     original = new_cases.loc[smoothed.index]
     
@@ -364,50 +356,120 @@ original.plot(title=f"{state_name} New Cases per Day",
                alpha=.5,
                label='Actual',
                legend=True,
-             figsize=(600/72, 400/72))
+             figsize=(500/72, 400/72))
 
 ax = smoothed.plot(label='Smoothed',
                    legend=True)
+
 ax.get_figure().set_facecolor('w')
 
 # %% [markdown]
 # ### Running the Algorithm
-# %% [markdown]
-# Just like the example before, we create lambda based on the previous day's counts from all values of $R_t$. Unlike the previous example, I now evaluate the __log__ of the Poisson. Why? It makes windowing easier.
 # 
-# Since $\log{ab}=\log{a}+\log{b}$, we can do a rolling sum over the last $m$ periods and then exponentiate to get the rolling product of the original values. This does not change any of the numbers – it's just a convenience.
+# #### Choosing the Gaussian $\sigma$ for $P(R_t|R_{t-1})$
+# 
+# > Note: you can safely skip this section if you trust that we chose the right value of $\sigma$ for the gaussian process below. Otherwise, read on.
+# 
+# The original approach simply selects yesterday's posterior as today's prior. While intuitive, doing so doesn't allow for our belief that the value of $R_t$ has likely changed from yesterday. To allow for that change, we apply Gaussian noise to the prior distribution with some standard deviation $\sigma$. The higher $\sigma$ the more noise and the more we will expect the value of $R_t$ to drift each day. Interestingly, applying noise on noise iteratively means that there will be a natural decay of distant posteriors. This approach has a similar effect of windowing, but is more robust and doesn't arbitrarily forget posteriors after a certain time like my previous approach. Specifically, windowing computed a fixed $R_t$ at each time $t$ that explained the surrounding $w$ days of cases, while the new approach computes a series of $R_t$ values that explains all the cases, assuming that $R_t$ fluctuates by about $\sigma$ each day.
+# 
+# However, there's still an arbitrary choice: what should $\sigma$ be? Adam Lerer pointed out that we can use the process of maximum likelihood to inform our choice. Here's how it works:
+# 
+# Maximum likelihood says that we'd like to choose a $\sigma$ that maximizes the likelihood of seeing our data $k$: $P(k|\sigma)$. Since $\sigma$ is a fixed value, let's leave it out of the notation, so we're trying to maximize $P(k)$ over all choices of $\sigma$.
+# 
+# Since $P(k)=P(k_0,k_1,\ldots,k_t)=P(k_0)P(k_1)\ldots P(k_t)$ we need to define $P(k_t)$. It turns out this is the denominator of Bayes rule:
+# 
+# $$P(R_t|k_t) = \frac{P(k_t|R_t)P(R_t)}{P(k_t)}$$
+# 
+# To calculate it, we notice that the numerator is actually just the joint distribution of $k$ and $R$:
+# 
+# $$ P(k_t,R_t) =  P(k_t|R_t)P(R_t) $$
+# 
+# We can marginalize the distribution over $R_t$ to get $P(k_t)$:
+# 
+# $$ P(k_t) = \sum_{R_{t}}{P(k_t|R_t)P(R_t)} $$
+# 
+# So, if we sum the distribution of the numerator over all values of $R_t$, we get $P(k_t)$. And since we're calculating that anyway as we're calculating the posterior, we'll just keep track of it separately.
+# 
+# Since we're looking for the value of $\sigma$ that maximizes $P(k)$ overall, we actually want to maximize: 
+# 
+# $$\prod_{t,i}{p(k_{ti})}$$
+# 
+# where $t$ are all times and $i$ is each state.
+# 
+# Since we're multiplying lots of tiny probabilities together, it can be easier (and less error-prone) to take the $\log$ of the values and add them together. Remember that $\log{ab}=\log{a}+\log{b}$. And since logarithms are monotonically increasing, maximizing the sum of the $\log$ of the probabilities is the same as maximizing the product of the non-logarithmic probabilities for any choice of $\sigma$.
+# 
+# ### Function for Calculating the Posteriors
+# 
+# To calculate the posteriors we follow these steps:
+# 1. Calculate $\lambda$ - the expected arrival rate for every day's poisson process
+# 2. Calculate each day's likelihood distribution over all possible values of $R_t$
+# 3. Calculate the Gaussian process matrix based on the value of $\sigma$ we discussed above
+# 4. Calculate our initial prior because our first day does not have a previous day from which to take the posterior
+#   - Based on [info from the cdc](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article) we will choose a Gamma with mean 7.
+# 5. Loop from day 1 to the end, doing the following:
+#   - Calculate the prior by applying the Gaussian to yesterday's prior.
+#   - Apply Bayes' rule by multiplying this prior and the likelihood we calculated in step 2.
+#   - Divide by the probability of the data (also Bayes' rule)
 
 # %%
-def get_posteriors(sr, window=7, min_periods=1):
+def get_posteriors(sr, sigma=0.15):
+
+    # (1) Calculate Lambda
     lam = sr[:-1].values * np.exp(GAMMA * (r_t_range[:, None] - 1))
 
-    # Note: if you want to have a Uniform prior you can use the following line instead.
-    # I chose the gamma distribution because of our prior knowledge of the likely value
-    # of R_t.
     
-    # prior0 = np.full(len(r_t_range), np.log(1/len(r_t_range)))
-    prior0 = np.log(sps.gamma(a=3).pdf(r_t_range) + 1e-14)
-
+    # (2) Calculate each day's likelihood
     likelihoods = pd.DataFrame(
-        # Short-hand way of concatenating the prior and likelihoods
-        data = np.c_[prior0, sps.poisson.logpmf(sr[1:].values, lam)],
+        data = sps.poisson.pmf(sr[1:].values, lam),
         index = r_t_range,
-        columns = sr.index)
-
-    # Perform a rolling sum of log likelihoods. This is the equivalent
-    # of multiplying the original distributions. Exponentiate to move
-    # out of log.
-    posteriors = likelihoods.rolling(window,
-                                     axis=1,
-                                     min_periods=min_periods).sum()
-    posteriors = np.exp(posteriors)
-
-    # Normalize to 1.0
-    posteriors = posteriors.div(posteriors.sum(axis=0), axis=1)
+        columns = sr.index[1:])
     
-    return posteriors
+    # (3) Create the Gaussian Matrix
+    process_matrix = sps.norm(loc=r_t_range,
+                              scale=sigma
+                             ).pdf(r_t_range[:, None]) 
 
-posteriors = get_posteriors(smoothed)
+    # (3a) Normalize all rows to sum to 1
+    process_matrix /= process_matrix.sum(axis=0)
+    
+    # (4) Calculate the initial prior
+    prior0 = sps.gamma(a=4).pdf(r_t_range)
+    prior0 /= prior0.sum()
+
+    # Create a DataFrame that will hold our posteriors for each day
+    # Insert our prior as the first posterior.
+    posteriors = pd.DataFrame(
+        index=r_t_range,
+        columns=sr.index,
+        data={sr.index[0]: prior0}
+    )
+    
+    # We said we'd keep track of the sum of the log of the probability
+    # of the data for maximum likelihood calculation.
+    log_likelihood = 0.0
+
+    # (5) Iteratively apply Bayes' rule
+    for previous_day, current_day in zip(sr.index[:-1], sr.index[1:]):
+
+        #(5a) Calculate the new prior
+        current_prior = process_matrix @ posteriors[previous_day]
+        
+        #(5b) Calculate the numerator of Bayes' Rule: P(k|R_t)P(R_t)
+        numerator = likelihoods[current_day] * current_prior
+        
+        #(5c) Calcluate the denominator of Bayes' Rule P(k)
+        denominator = np.sum(numerator)
+        
+        # Execute full Bayes' Rule
+        posteriors[current_day] = numerator/denominator
+        
+        # Add to the running sum of log likelihoods
+        log_likelihood += np.log(denominator)
+    
+    return posteriors, log_likelihood
+
+# Note that we're fixing sigma to a value just for the example
+posteriors, log_likelihood = get_posteriors(smoothed, sigma=.25)
 
 # %% [markdown]
 # ### The Result
@@ -420,18 +482,19 @@ ax = posteriors.plot(title=f'{state_name} - Daily Posterior for $R_t$',
            lw=1,
            c='k',
            alpha=.3,
-           xlim=(0.4,4))
+           xlim=(0.4,6))
 
 ax.set_xlabel('$R_t$');
 
 # %% [markdown]
 # ### Plotting in the Time Domain with Credible Intervals
-# %% [markdown]
+# 
 # Since our results include uncertainty, we'd like to be able to view the most likely value of $R_t$ along with its highest-density interval.
 
 # %%
 # Note that this takes a while to execute - it's not the most efficient algorithm
-hdis = highest_density_interval(posteriors)
+
+hdis = highest_density_interval(posteriors, p=.9)
 
 most_likely = posteriors.idxmax().rename('ML')
 
@@ -470,12 +533,12 @@ def plot_rt(result, ax, state_name):
     
     # Aesthetically, extrapolate credible interval by 1 day either side
     lowfn = interp1d(date2num(index),
-                     result['Low'].values,
+                     result['Low_90'].values,
                      bounds_error=False,
                      fill_value='extrapolate')
     
     highfn = interp1d(date2num(index),
-                      result['High'].values,
+                      result['High_90'].values,
                       bounds_error=False,
                       fill_value='extrapolate')
     
@@ -506,7 +569,7 @@ def plot_rt(result, ax, state_name):
     ax.margins(0)
     ax.grid(which='major', axis='y', c='k', alpha=.1, zorder=-2)
     ax.margins(0)
-    ax.set_ylim(0.0,3.5)
+    ax.set_ylim(0.0, 5.0)
     ax.set_xlim(pd.Timestamp('2020-03-01'), result.index.get_level_values('date')[-1]+pd.Timedelta(days=1))
     fig.set_facecolor('w')
 
@@ -515,37 +578,95 @@ fig, ax = plt.subplots(figsize=(600/72,400/72))
 
 plot_rt(result, ax, state_name)
 ax.set_title(f'Real-time $R_t$ for {state_name}')
-ax.set_ylim(.5,3.5)
 ax.xaxis.set_major_locator(mdates.WeekdayLocator())
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %d'))
 
 # %% [markdown]
-# ### Repeat the Process for Every State
+# ### Choosing the optimal $\sigma$
+# 
+# In the previous section we described choosing an optimal $\sigma$, but we just assumed a value. But now that we can evaluate each state with any sigma, we have the tools for choosing the optimal $\sigma$.
+# 
+# Above we said we'd choose the value of $\sigma$ that maximizes the likelihood of the data $P(k)$. Since we don't want to overfit on any one state, we choose the sigma that maximizes $P(k)$ over every state. To do this, we add up all the log likelihoods per state for each value of sigma then choose the maximum.
+# 
+# > Note: this takes a while!
 
 # %%
+sigmas = np.linspace(1/20, 1, 20)
+
+targets = states.index.get_level_values('state').isin(FILTERED_COUNTRIES)
+states_to_process = states.loc[targets]
+
 results = {}
 
-# states_to_process = states.loc[~states.index.get_level_values('state').isin(FILTERED_REGIONS)]
-states_to_process = states.loc[states.index.get_level_values('state').isin(FILTERED_COUNTRIES)]
-
 for state_name, cases in states_to_process.groupby(level='state'):
-
-    clear_output(wait=True)
-    print(f'Processing {state_name}')
-    new, smoothed = prepare_cases(cases)
-    print('\tGetting Posteriors')
-    try:
-        posteriors = get_posteriors(smoothed)
-    except:
-        display(cases)
-    print('\tGetting HDIs')
-    hdis = highest_density_interval(posteriors)
-    print('\tGetting most likely values')
-    most_likely = posteriors.idxmax().rename('ML')
-    result = pd.concat([most_likely, hdis], axis=1)
-    results[state_name] = result.droplevel(0)
     
-clear_output(wait=True)
+    print(state_name)
+    new, smoothed = prepare_cases(cases)
+    
+    result = {}
+    
+    # Holds all posteriors with every given value of sigma
+    result['posteriors'] = []
+    
+    # Holds the log likelihood across all k for each value of sigma
+    result['log_likelihoods'] = []
+    
+    for sigma in sigmas:
+        posteriors, log_likelihood = get_posteriors(smoothed, sigma=sigma)
+        result['posteriors'].append(posteriors)
+        result['log_likelihoods'].append(log_likelihood)
+    
+    # Store all results keyed off of state name
+    results[state_name] = result
+    clear_output(wait=True)
+
+print('Done.')
+
+# %% [markdown]
+# Now that we have all the log likelihoods, we can sum for each value of sigma across states, graph it, then choose the maximum.
+
+# %%
+# Each index of this array holds the total of the log likelihoods for
+# the corresponding index of the sigmas array.
+total_log_likelihoods = np.zeros_like(sigmas)
+
+# Loop through each state's results and add the log likelihoods to the running total.
+for state_name, result in results.items():
+    total_log_likelihoods += result['log_likelihoods']
+
+# Select the index with the largest log likelihood total
+max_likelihood_index = total_log_likelihoods.argmax()
+
+# Select the value that has the highest log likelihood
+sigma = sigmas[max_likelihood_index]
+
+# Plot it
+fig, ax = plt.subplots()
+ax.set_title(f"Maximum Likelihood value for $\sigma$ = {sigma:.2f}");
+ax.plot(sigmas, total_log_likelihoods)
+ax.axvline(sigma, color='k', linestyle=":")
+
+# %% [markdown]
+# ### Compile Final Results
+# 
+# Given that we've selected the optimal $\sigma$, let's grab the precalculated posterior corresponding to that value of $\sigma$ for each state. Let's also calculate the 90% and 50% highest density intervals (this takes a little while) and also the most likely value.
+
+# %%
+final_results = None
+
+for state_name, result in results.items():
+    print(state_name)
+    posteriors = result['posteriors'][max_likelihood_index]
+    hdis_90 = highest_density_interval(posteriors, p=.9)
+    hdis_50 = highest_density_interval(posteriors, p=.5)
+    most_likely = posteriors.idxmax().rename('ML')
+    result = pd.concat([most_likely, hdis_90, hdis_50], axis=1)
+    if final_results is None:
+        final_results = result
+    else:
+        final_results = pd.concat([final_results, result])
+    clear_output(wait=True)
+
 print('Done.')
 
 # %% [markdown]
@@ -555,10 +676,9 @@ print('Done.')
 ncols = 4
 nrows = int(np.ceil(len(results) / ncols))
 
-# fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(15, nrows*3))
 fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(15, nrows*3))
 
-for i, (state_name, result) in enumerate(results.items()):
+for i, (state_name, result) in enumerate(final_results.groupby('state')):
     plot_rt(result, axes.flat[i], state_name)
 
 fig.tight_layout()
@@ -568,20 +688,8 @@ fig.set_facecolor('w')
 # ### Export Data to CSV
 
 # %%
-overall = None
-
-for state_name, result in results.items():
-    r = result.copy()
-    r.index = pd.MultiIndex.from_product([[state_name], result.index])
-    if overall is None:
-        overall = r
-    else:
-        overall = pd.concat([overall, r])
-
-overall.sort_index(inplace=True)
-
-# Uncomment this line if you'd like to export
-# overall.to_csv('data/rt.csv')
+# Uncomment the following line if you'd like to export the data
+#final_results.to_csv('data/rt.csv')
 
 # %% [markdown]
 # ### Standings
@@ -590,16 +698,17 @@ overall.sort_index(inplace=True)
 # As of 4/12
 """
 no_lockdown = [
-    'North Dakota',
-    'South Dakota',
-    'Nebraska',
-    'Iowa',
-    'Arkansas'
+    'North Dakota', 'ND',
+    'South Dakota', 'SD',
+    'Nebraska', 'NB',
+    'Iowa', 'IA',
+    'Arkansas','AR'
 ]
 partial_lockdown = [
-    'Utah',
-    'Wyoming',
-    'Oklahoma'
+    'Utah', 'UT',
+    'Wyoming', 'WY',
+    'Oklahoma', 'OK',
+    'Massachusetts', 'MA'
 ]
 """
 FULL_COLOR = [.7,.7,.7]
@@ -609,20 +718,21 @@ ERROR_BAR_COLOR = [.3,.3,.3]
 
 
 # %%
-# filtered = overall.index.get_level_values(0).isin(FILTERED_REGIONS)
-# mr = overall.loc[filtered].groupby(level=0)[['ML', 'High', 'Low']]v.last()
+final_results
 
-filtered = overall.index.get_level_values(0).isin(FILTERED_COUNTRIES)
-mr = overall.loc[filtered].groupby(level=0)[['ML', 'High', 'Low']].last()
 
-def plot_standings(mr, figsize=None, title='Most Recent $R_t$ by Country'):
+# %%
+filtered = final_results.index.get_level_values(0).isin(FILTERED_COUNTRIES)
+mr = final_results.loc[filtered].groupby(level=0)[['ML', 'High_90', 'Low_90']].last()
+
+def plot_standings(mr, figsize=None, title='Most Recent $R_t$ by State'):
     if not figsize:
         figsize = ((15.9/50)*len(mr)+.1,2.5)
         
     fig, ax = plt.subplots(figsize=figsize)
 
     ax.set_title(title)
-    err = mr[['Low', 'High']].sub(mr['ML'], axis=0).abs()
+    err = mr[['Low_90', 'High_90']].sub(mr['ML'], axis=0).abs()
     bars = ax.bar(mr.index,
                   mr['ML'],
                   width=.825,
@@ -632,15 +742,10 @@ def plot_standings(mr, figsize=None, title='Most Recent $R_t$ by Country'):
                   error_kw={'alpha':.5, 'lw':1},
                   yerr=err.values.T)
 
-    """
     for bar, state_name in zip(bars, mr.index):
-        if state_name in no_lockdown:
-            bar.set_color(NONE_COLOR)
-        if state_name in partial_lockdown:
-            bar.set_color(PARTIAL_COLOR)
-    """
-
-    for bar, state_name in zip(bars, mr.index):
+        # if state_name in no_lockdown:
+        # bar.set_color(NONE_COLOR)
+        #if state_name in partial_lockdown:
         bar.set_color(PARTIAL_COLOR)
 
     labels = mr.index.to_series().replace({'District of Columbia':'DC'})
@@ -649,7 +754,7 @@ def plot_standings(mr, figsize=None, title='Most Recent $R_t$ by Country'):
     ax.set_ylim(0,2.)
     ax.axhline(1.0, linestyle=':', color='k', lw=1)
 
-    
+    """
     leg = ax.legend(handles=[
                         Patch(label='Full', color=FULL_COLOR),
                         Patch(label='Partial', color=PARTIAL_COLOR),
@@ -661,17 +766,8 @@ def plot_standings(mr, figsize=None, title='Most Recent $R_t$ by Country'):
                     columnspacing=.75,
                     handletextpad=.5,
                     handlelength=1)
-    
-    leg = ax.legend(handles=[
-                        Patch(label='Full', color=FULL_COLOR),
-                        Patch(label='Partial', color=PARTIAL_COLOR),
-                        Patch(label='None', color=NONE_COLOR)
-                    ])
-    
     leg._legend_box.align = "left"
-
-    ax.get_legend().remove()
-
+    """
     fig.set_facecolor('w')
     return fig, ax
 
@@ -680,20 +776,19 @@ plot_standings(mr);
 
 
 # %%
-mr.sort_values('High', inplace=True)
+mr.sort_values('High_90', inplace=True)
 plot_standings(mr);
 
 
 # %%
-show = mr[mr.High.le(1.1)].sort_values('ML')
+show = mr[mr.High_90.le(1)].sort_values('ML')
 fig, ax = plot_standings(show, title='Likely Under Control');
 
 
 # %%
-show = mr[mr.Low.ge(1.05)].sort_values('Low')
+show = mr[mr.Low_90.ge(1.0)].sort_values('Low_90')
 fig, ax = plot_standings(show, title='Likely Not Under Control');
 # ax.get_legend().remove()
-
 
 
 # %%
