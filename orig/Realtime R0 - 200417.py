@@ -37,7 +37,6 @@ from scipy.interpolate import interp1d
 
 from IPython.display import clear_output
 
-"""
 FILTERED_REGIONS = [
     'Virgin Islands',
     'American Samoa',
@@ -46,56 +45,6 @@ FILTERED_REGIONS = [
     'Puerto Rico']
 
 FILTERED_REGION_CODES = ['AS', 'GU', 'PR', 'VI', 'MP']
-"""
-
-FILTERED_COUNTRIES = [
-    'Andorra',
-    'Austria',
-    'Belgium',
-    'Bosnia and Herzegovina',
-    'Bulgaria',
-    'Croatia',
-    'Czechia',
-    'Denmark',
-    'Finland',
-    'France',
-    'Germany',
-    'Hungary',
-    'Iceland',
-    'Ireland',
-    'Italy',
-    'Luxembourg',
-    'Netherlands',
-    'Montenegro',
-    'Moldova',
-    'Norway',
-    'Portugal',
-    'Russia',
-    'Serbia',
-    'Slovakia',
-    'Slovenia',
-    'Spain',
-    'Sweden',
-    'Switzerland',
-    'United Kingdom'
-]
-
-url = 'jhu.csv'
-countries = pd.read_csv(url,
-                     usecols=[0,1,3],
-                     squeeze=True)
-countries = countries['state'].drop_duplicates()
-
-FILTERED_COUNTRIES = list(countries)
-# FILTERED_COUNTRIES.remove('Angola')
-# FILTERED_COUNTRIES.remove('Antigua and Barbuda')
-# FILTERED_COUNTRIES.remove('Bahamas')
-# FILTERED_COUNTRIES.remove('Barbados')
-FILTERED_COUNTRIES.remove('Bhutan')
-
-
-
-
 
 get_ipython().run_line_magic('config', "InlineBackend.figure_format = 'retina'")
 
@@ -281,13 +230,10 @@ def highest_density_interval(pmf, p=.9):
     best = None
     for i, value in enumerate(cumsum):
         for j, high_value in enumerate(cumsum[i+1:]):
-            if (high_value-value > p) and (not best or j < best[1]-best[0]):
+            if (high_value-value > p) and (not best or j<best[1]-best[0]):
                 best = (i, i+j+1)
                 break
-
-    if best == None:
-        return pd.Series()
-
+            
     low = pmf.index[best[0]]
     high = pmf.index[best[1]]
     return pd.Series([low, high], index=[f'Low_{p*100:.0f}', f'High_{p*100:.0f}'])
@@ -326,20 +272,10 @@ ax.legend();
 
 # %%
 url = 'https://covidtracking.com/api/v1/states/daily.csv'
-url = 'jhu.csv'
-
-"""
 states = pd.read_csv(url,
                      usecols=['date', 'state', 'positive'],
                      parse_dates=['date'],
                      index_col=['state', 'date'],
-                     squeeze=True).sort_index()
-"""
-
-states = pd.read_csv(url,
-                     usecols=[0,1,3],
-                     index_col=['state', 'date'],
-                     parse_dates=['date'],
                      squeeze=True).sort_index()
 
 # %% [markdown]
@@ -348,8 +284,7 @@ states = pd.read_csv(url,
 # Also, case reporting is very erratic based on testing backlogs, etc. To get the best view of the 'true' data we can, I've applied a gaussian filter to the time series. This is obviously an arbitrary choice, but you'd imagine the real world process is not nearly as stochastic as the actual reporting.
 
 # %%
-# state_name = 'NY'
-state_name = 'Eswatini'
+state_name = 'NY'
 
 def prepare_cases(cases):
     new_cases = cases.diff()
@@ -358,16 +293,13 @@ def prepare_cases(cases):
         win_type='gaussian',
         min_periods=1,
         center=True).mean(std=3).round()
-        
-    smoothed_tmp = smoothed
-    for i in range(10, 0, -1):
-        idx_start = np.searchsorted(smoothed, i)
-        smoothed_tmp = smoothed.iloc[idx_start:]
-        original = new_cases.loc[smoothed_tmp.index]
-        if len(smoothed_tmp) > 0:
-            break 
     
-    return original, smoothed_tmp
+    idx_start = np.searchsorted(smoothed, 10)
+    
+    smoothed = smoothed.iloc[idx_start:]
+    original = new_cases.loc[smoothed.index]
+    
+    return original, smoothed
 
 cases = states.xs(state_name).rename(f"{state_name} cases")
 
@@ -615,22 +547,16 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %d'))
 # %%
 sigmas = np.linspace(1/20, 1, 20)
 
-targets = states.index.get_level_values('state').isin(FILTERED_COUNTRIES)
+targets = ~states.index.get_level_values('state').isin(FILTERED_REGION_CODES)
 states_to_process = states.loc[targets]
 
 results = {}
 
-removed_countries = []
 for state_name, cases in states_to_process.groupby(level='state'):
     
     print(state_name)
     new, smoothed = prepare_cases(cases)
     
-    if len(smoothed) < 2:
-        FILTERED_COUNTRIES.remove(state_name)
-        removed_countries.append(state_name)
-        continue
-
     result = {}
     
     # Holds all posteriors with every given value of sigma
@@ -649,7 +575,6 @@ for state_name, cases in states_to_process.groupby(level='state'):
     clear_output(wait=True)
 
 print('Done.')
-print('Removed countries:', removed_countries)
 
 # %% [markdown]
 # Now that we have all the log likelihoods, we can sum for each value of sigma across states, graph it, then choose the maximum.
@@ -696,39 +621,35 @@ for state_name, result in results.items():
         final_results = pd.concat([final_results, result])
     clear_output(wait=True)
 
-
 print('Done.')
 
 # %% [markdown]
 # ### Plot All US States
 
 # %%
-ncols = 16
+ncols = 4
 nrows = int(np.ceil(len(results) / ncols))
 
-fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(60, nrows*3))
+fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(15, nrows*3))
 
 for i, (state_name, result) in enumerate(final_results.groupby('state')):
-    # print(state_name, result)
     plot_rt(result, axes.flat[i], state_name)
-    clear_output(wait=True)
 
 fig.tight_layout()
 fig.set_facecolor('w')
-fig.savefig("world_20200418.png")
+
 # %% [markdown]
 # ### Export Data to CSV
 
 # %%
 # Uncomment the following line if you'd like to export the data
-#final_results.to_csv('data/rt.csv')
+final_results.to_csv('data/rt.csv')
 
 # %% [markdown]
 # ### Standings
 
 # %%
 # As of 4/12
-"""
 no_lockdown = [
     'North Dakota', 'ND',
     'South Dakota', 'SD',
@@ -742,7 +663,7 @@ partial_lockdown = [
     'Oklahoma', 'OK',
     'Massachusetts', 'MA'
 ]
-"""
+
 FULL_COLOR = [.7,.7,.7]
 NONE_COLOR = [179/255,35/255,14/255]
 PARTIAL_COLOR = [.5,.5,.5]
@@ -754,8 +675,8 @@ final_results
 
 
 # %%
-filtered = final_results.index.get_level_values(0).isin(FILTERED_COUNTRIES)
-mr = final_results.loc[filtered].groupby(level=0)[['ML', 'High_90', 'Low_90']].last()
+filtered = final_results.index.get_level_values(0).isin(FILTERED_REGIONS)
+mr = final_results.loc[~filtered].groupby(level=0)[['ML', 'High_90', 'Low_90']].last()
 
 def plot_standings(mr, figsize=None, title='Most Recent $R_t$ by State'):
     if not figsize:
@@ -775,10 +696,10 @@ def plot_standings(mr, figsize=None, title='Most Recent $R_t$ by State'):
                   yerr=err.values.T)
 
     for bar, state_name in zip(bars, mr.index):
-        # if state_name in no_lockdown:
-        # bar.set_color(NONE_COLOR)
-        #if state_name in partial_lockdown:
-        bar.set_color(PARTIAL_COLOR)
+        if state_name in no_lockdown:
+            bar.set_color(NONE_COLOR)
+        if state_name in partial_lockdown:
+            bar.set_color(PARTIAL_COLOR)
 
     labels = mr.index.to_series().replace({'District of Columbia':'DC'})
     ax.set_xticklabels(labels, rotation=90, fontsize=11)
@@ -786,7 +707,6 @@ def plot_standings(mr, figsize=None, title='Most Recent $R_t$ by State'):
     ax.set_ylim(0,2.)
     ax.axhline(1.0, linestyle=':', color='k', lw=1)
 
-    """
     leg = ax.legend(handles=[
                         Patch(label='Full', color=FULL_COLOR),
                         Patch(label='Partial', color=PARTIAL_COLOR),
@@ -798,8 +718,8 @@ def plot_standings(mr, figsize=None, title='Most Recent $R_t$ by State'):
                     columnspacing=.75,
                     handletextpad=.5,
                     handlelength=1)
+
     leg._legend_box.align = "left"
-    """
     fig.set_facecolor('w')
     return fig, ax
 
@@ -820,7 +740,5 @@ fig, ax = plot_standings(show, title='Likely Under Control');
 # %%
 show = mr[mr.Low_90.ge(1.0)].sort_values('Low_90')
 fig, ax = plot_standings(show, title='Likely Not Under Control');
-# ax.get_legend().remove()
+ax.get_legend().remove()
 
-
-# %%
