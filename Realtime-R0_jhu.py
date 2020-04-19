@@ -80,6 +80,23 @@ FILTERED_COUNTRIES = [
     'United Kingdom'
 ]
 
+url = 'jhu.csv'
+countries = pd.read_csv(url,
+                     usecols=[0,1,3],
+                     squeeze=True)
+countries = countries['state'].drop_duplicates()
+
+FILTERED_COUNTRIES = list(countries)
+# FILTERED_COUNTRIES.remove('Angola')
+# FILTERED_COUNTRIES.remove('Antigua and Barbuda')
+# FILTERED_COUNTRIES.remove('Bahamas')
+# FILTERED_COUNTRIES.remove('Barbados')
+FILTERED_COUNTRIES.remove('Bhutan')
+
+
+
+
+
 get_ipython().run_line_magic('config', "InlineBackend.figure_format = 'retina'")
 
 # %% [markdown]
@@ -310,6 +327,7 @@ ax.legend();
 # %%
 url = 'https://covidtracking.com/api/v1/states/daily.csv'
 url = 'jhu.csv'
+
 """
 states = pd.read_csv(url,
                      usecols=['date', 'state', 'positive'],
@@ -317,11 +335,13 @@ states = pd.read_csv(url,
                      index_col=['state', 'date'],
                      squeeze=True).sort_index()
 """
+
 states = pd.read_csv(url,
                      usecols=[0,1,3],
                      index_col=['state', 'date'],
                      parse_dates=['date'],
                      squeeze=True).sort_index()
+
 # %% [markdown]
 # Taking a look at the state, we need to start the analysis when there are a consistent number of cases each day. Find the last zero new case day and start on the day after that.
 # 
@@ -329,7 +349,7 @@ states = pd.read_csv(url,
 
 # %%
 # state_name = 'NY'
-state_name = 'France'
+state_name = 'Germany'
 
 def prepare_cases(cases):
     new_cases = cases.diff()
@@ -339,12 +359,15 @@ def prepare_cases(cases):
         min_periods=1,
         center=True).mean(std=3).round()
     
-    idx_start = np.searchsorted(smoothed, 10)
+    smoothed_tmp = smoothed
+    for i in range(10, 0, -1):
+        idx_start = np.searchsorted(smoothed, i)
+        smoothed_tmp = smoothed.iloc[idx_start:]
+        original = new_cases.loc[smoothed_tmp.index]
+        if len(smoothed_tmp) > 0:
+            break 
     
-    smoothed = smoothed.iloc[idx_start:]
-    original = new_cases.loc[smoothed.index]
-    
-    return original, smoothed
+    return original, smoothed_tmp
 
 cases = states.xs(state_name).rename(f"{state_name} cases")
 
@@ -469,6 +492,7 @@ def get_posteriors(sr, sigma=0.15):
     return posteriors, log_likelihood
 
 # Note that we're fixing sigma to a value just for the example
+
 posteriors, log_likelihood = get_posteriors(smoothed, sigma=.25)
 
 # %% [markdown]
@@ -598,11 +622,17 @@ states_to_process = states.loc[targets]
 
 results = {}
 
+removed_countries = []
 for state_name, cases in states_to_process.groupby(level='state'):
     
     print(state_name)
     new, smoothed = prepare_cases(cases)
     
+    if len(smoothed) < 2:
+        FILTERED_COUNTRIES.remove(state_name)
+        removed_countries.append(state_name)
+        continue
+
     result = {}
     
     # Holds all posteriors with every given value of sigma
@@ -621,6 +651,7 @@ for state_name, cases in states_to_process.groupby(level='state'):
     clear_output(wait=True)
 
 print('Done.')
+print('Removed countries:', removed_countries)
 
 # %% [markdown]
 # Now that we have all the log likelihoods, we can sum for each value of sigma across states, graph it, then choose the maximum.
@@ -667,23 +698,26 @@ for state_name, result in results.items():
         final_results = pd.concat([final_results, result])
     clear_output(wait=True)
 
+
 print('Done.')
 
 # %% [markdown]
 # ### Plot All US States
 
 # %%
-ncols = 4
+ncols = 16
 nrows = int(np.ceil(len(results) / ncols))
 
-fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(15, nrows*3))
+fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(60, nrows*3))
 
 for i, (state_name, result) in enumerate(final_results.groupby('state')):
+    # print(state_name, result)
     plot_rt(result, axes.flat[i], state_name)
+    clear_output(wait=True)
 
 fig.tight_layout()
 fig.set_facecolor('w')
-
+fig.savefig("world_20200418.png")
 # %% [markdown]
 # ### Export Data to CSV
 
