@@ -16,7 +16,8 @@ https://github.com/k-sys/covid-19/blob/master/Realtime%20R0.ipynb
 https://github.com/CSSEGISandData/COVID-19
 
 ## Deutschland Infizierte 
-[img1]: Germany_new_cases.png
+![alt text](Germany_new_cases.png "Germany)
+
 
 ## Rt
 [img2]: Germany.png
