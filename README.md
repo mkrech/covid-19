@@ -16,6 +16,8 @@ https://github.com/k-sys/covid-19/blob/master/Realtime%20R0.ipynb
 https://github.com/CSSEGISandData/COVID-19
 
 ## Deutschland Infizierte 
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
 ![alt text](https://raw.githubusercontent.com/mkrech/covid-19/master/Germany_new_cases.png "Germany)
 
 
