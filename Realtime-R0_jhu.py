@@ -824,3 +824,6 @@ fig, ax = plot_standings(show, title='Likely Under Control');
 show = mr[mr.Low_90.ge(1.0)].sort_values('Low_90')
 fig, ax = plot_standings(show, title='Likely Not Under Control');
 # ax.get_legend().remove()
+
+
+# %%

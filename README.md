@@ -17,7 +17,7 @@ https://github.com/CSSEGISandData/COVID-19
 ## Rt Deutschland
 ![Rt Deutschland](https://raw.githubusercontent.com/mkrech/covid-19/master/Germany.png) 
 
-## Deutschland Infizierte 
+## Deutschland neue Fälle  
 ![Deutschland Infizierte](https://raw.githubusercontent.com/mkrech/covid-19/master/Germany_new_cases.png)
 
 ## Rt Welt
