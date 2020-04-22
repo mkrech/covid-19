@@ -2,7 +2,7 @@
 
 Dies sind aktuelle Werte für Rt, ein Schlüsselmaß dafür, wie schnell das Virus wächst. Dies ist die durchschnittliche Anzahl von Personen, die von einer infektiösen Person infiziert werden. Wenn Rt über 1,0 liegt, verbreitet sich das Virus schnell. Wenn Rt unter 1,0 liegt, hört das Virus auf, sich zu verbreiten.
 
-## Bettencourt & Ribeiro's Approach
+## Bettencourt & Ribeiro's Ansatz
 Real Time Bayesian Estimation of the Epidemic Potential of Emerging Infectious Diseases
 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0002185
 
