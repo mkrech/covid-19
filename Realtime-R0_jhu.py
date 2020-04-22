@@ -385,6 +385,8 @@ ax = smoothed.plot(label='Smoothed',
                    legend=True)
 
 ax.get_figure().set_facecolor('w')
+# fig.savefig(state_name + "_new_cases.png")
+
 
 # %% [markdown]
 # ### Running the Algorithm
@@ -603,6 +605,7 @@ ax.set_title(f'Real-time $R_t$ for {state_name}')
 ax.xaxis.set_major_locator(mdates.WeekdayLocator())
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %d'))
 
+fig.savefig(state_name + ".png")
 # %% [markdown]
 # ### Choosing the optimal $\sigma$
 # 
@@ -715,13 +718,13 @@ for i, (state_name, result) in enumerate(final_results.groupby('state')):
 
 fig.tight_layout()
 fig.set_facecolor('w')
-fig.savefig("world_20200418.png")
+fig.savefig("world.png")
 # %% [markdown]
 # ### Export Data to CSV
 
 # %%
 # Uncomment the following line if you'd like to export the data
-final_results.to_csv('data/rt.csv')
+final_results.to_csv('rt.csv')
 
 # %% [markdown]
 # ### Standings
