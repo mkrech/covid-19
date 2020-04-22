@@ -23,5 +23,5 @@ https://github.com/CSSEGISandData/COVID-19
 ## Rt Welt
 ![Rt Deutschland](https://raw.githubusercontent.com/mkrech/covid-19/master/world.png) 
 
-## rt welt csv download
+## Rt welt csv download
 https://raw.githubusercontent.com/mkrech/covid-19/master/rt.csv
