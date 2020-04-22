@@ -16,14 +16,13 @@ https://github.com/k-sys/covid-19/blob/master/Realtime%20R0.ipynb
 https://github.com/CSSEGISandData/COVID-19
 
 ## Deutschland Infizierte 
-![Image of Yaktocat](https://raw.githubusercontent.com/mkrech/covid-19/master/Germany_new_cases.png)
-
+![Deutschland Infizierte](https://raw.githubusercontent.com/mkrech/covid-19/master/Germany_new_cases.png)
 
 ## Rt
-[img2]: Germany.png
+![Rt Deutschland](https://raw.githubusercontent.com/mkrech/covid-19/master/Germany.png) 
 
-## Welt
-[img2]: world.png
+## Rt Welt
+![Rt Deutschland](https://raw.githubusercontent.com/mkrech/covid-19/master/world.png) 
 
 ## rt welt csv download
-[logo]: rt.csv
+https://raw.githubusercontent.com/mkrech/covid-19/master/rt.csv
