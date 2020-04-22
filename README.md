@@ -15,11 +15,11 @@ https://github.com/k-sys/covid-19/blob/master/Realtime%20R0.ipynb
 ## Daten aus JHU
 https://github.com/CSSEGISandData/COVID-19
 
+## Rt Deutschland
+![Rt Deutschland](https://raw.githubusercontent.com/mkrech/covid-19/master/Germany.png) 
+
 ## Deutschland Infizierte 
 ![Deutschland Infizierte](https://raw.githubusercontent.com/mkrech/covid-19/master/Germany_new_cases.png)
-
-## Rt
-![Rt Deutschland](https://raw.githubusercontent.com/mkrech/covid-19/master/Germany.png) 
 
 ## Rt Welt
 ![Rt Deutschland](https://raw.githubusercontent.com/mkrech/covid-19/master/world.png) 
