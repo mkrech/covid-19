@@ -11,7 +11,7 @@ https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0002185
 https://rt.live/ @Kevin and 
 https://github.com/k-sys/covid-19/blob/master/Realtime%20R0.ipynb
 
-## Daten aus JHU
+## Daten aus 2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE
 https://github.com/CSSEGISandData/COVID-19
 
 ## Rt Deutschland
