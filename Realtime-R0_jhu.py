@@ -91,7 +91,7 @@ FILTERED_COUNTRIES = list(countries)
 # FILTERED_COUNTRIES.remove('Antigua and Barbuda')
 # FILTERED_COUNTRIES.remove('Bahamas')
 # FILTERED_COUNTRIES.remove('Barbados')
-FILTERED_COUNTRIES.remove('Bhutan')
+# FILTERED_COUNTRIES.remove('Bhutan')
 
 
 
@@ -349,7 +349,7 @@ states = pd.read_csv(url,
 
 # %%
 # state_name = 'NY'
-state_name = 'Angola'
+state_name = 'Germany'
 
 def prepare_cases(cases):
     new_cases = cases.diff()
@@ -721,7 +721,7 @@ fig.savefig("world_20200418.png")
 
 # %%
 # Uncomment the following line if you'd like to export the data
-#final_results.to_csv('data/rt.csv')
+final_results.to_csv('data/rt.csv')
 
 # %% [markdown]
 # ### Standings
