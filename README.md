@@ -16,13 +16,13 @@ https://github.com/k-sys/covid-19/blob/master/Realtime%20R0.ipynb
 https://github.com/CSSEGISandData/COVID-19
 
 ## Deutschland Infizierte 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 
+[img1]: https://github.com/mkrech/covid-19/blob/master/Germany_new_cases.png
 
 ## Rt
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 
+[img2]: https://github.com/mkrech/covid-19/blob/master/Germany.png
 
 ## Welt
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 
+[img2]: https://github.com/mkrech/covid-19/blob/master/world.png
 
 ## rt welt csv download
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/rt.csv
+[logo]: https://github.com/mkrech/covid-19/blob/master/rt.csv
